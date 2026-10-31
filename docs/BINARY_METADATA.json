@@ -1,0 +1,239 @@
+{
+  "schema": 1,
+  "mode": "verify",
+  "scope": "Only nine PEX and one native DLL; package layout retained; no other assets copied",
+  "runtime_unchanged": true,
+  "files": [
+    {
+      "format": "FO4 PEX3.9/game2",
+      "strings": 571,
+      "instructions": 3118,
+      "header_fields_changed": [
+        0,
+        1,
+        2
+      ],
+      "doc_changes": [],
+      "tail_before_offset": 9278,
+      "tail_after_offset": 9218,
+      "tail_bytes": 42697,
+      "tail_sha256": "0ab6d2a8bea895a194706a17daaefdce6d094174cb7d74a0fa83cc88d096fc60",
+      "runtime_projection_sha256": "226c77db74ec18fa08606c4acd70af22a767684e1ea2554ecc1a19378f51ffdd",
+      "runtime_unchanged": true,
+      "file": "mod_Data/Scripts/SuperPeasant/Brain.pex",
+      "before_sha256": "e0f12b1ddbdcce886cc30541fac3cb5dc658d3bee47adc42e6d56ce5ed16a8db",
+      "after_sha256": "5f5e4eb55d6c2908b0c1141f93614e30d5f4183079f735e97d1c73d184c6c633",
+      "before_bytes": 51975,
+      "after_bytes": 51915
+    },
+    {
+      "format": "FO4 PEX3.9/game2",
+      "strings": 1146,
+      "instructions": 7017,
+      "header_fields_changed": [
+        0,
+        1,
+        2
+      ],
+      "doc_changes": [],
+      "tail_before_offset": 16949,
+      "tail_after_offset": 16889,
+      "tail_bytes": 97082,
+      "tail_sha256": "46cb4afb303188384c444d0b1b8f50a83b1e8c0a04e95a049dbf569de8b4e2b8",
+      "runtime_projection_sha256": "bcd4d43af3561ef93ce78318a5179b2552c9849db87e5385b2c904474880b6c8",
+      "runtime_unchanged": true,
+      "file": "mod_Data/Scripts/SuperPeasant/Controller.pex",
+      "before_sha256": "7756a0c8fdb9b37859c55ed047fd837f2a79f0c8fc6ea63f36743cf73621794d",
+      "after_sha256": "dbeba88e7c003344f851146c8f12dffc474c90b64c6f1267cfa74b96477bac1c",
+      "before_bytes": 114031,
+      "after_bytes": 113971
+    },
+    {
+      "format": "FO4 PEX3.9/game2",
+      "strings": 86,
+      "instructions": 297,
+      "header_fields_changed": [
+        0,
+        1,
+        2
+      ],
+      "doc_changes": [],
+      "tail_before_offset": 1180,
+      "tail_after_offset": 1120,
+      "tail_bytes": 4107,
+      "tail_sha256": "147b69778485d034e09970f2cf69003c6b52c8fce7208ba5bdaad999d2effd8b",
+      "runtime_projection_sha256": "d0019e13941010751e94e50cc1015fa10325f65f1c134f8b8071995f369c7cff",
+      "runtime_unchanged": true,
+      "file": "mod_Data/Scripts/SuperPeasant/Lib.pex",
+      "before_sha256": "9567fad92abe7d6858abc102c470ab02e2cf9cb4340b37f53373b4c16c9022c7",
+      "after_sha256": "3967f762d32f731c8776e732f6515ff21880739183e04d5e00fe280d2ae6a136",
+      "before_bytes": 5287,
+      "after_bytes": 5227
+    },
+    {
+      "format": "FO4 PEX3.9/game2",
+      "strings": 112,
+      "instructions": 300,
+      "header_fields_changed": [
+        0,
+        1,
+        2
+      ],
+      "doc_changes": [],
+      "tail_before_offset": 2360,
+      "tail_after_offset": 2300,
+      "tail_bytes": 4584,
+      "tail_sha256": "c01b55a3b35200089330232fb9252f0c7d986d543fa313c14e53899ca14099dd",
+      "runtime_projection_sha256": "d8d676a54768faae0b17b229a4e983d70585b24467e2c752c81e13c3c5875e8c",
+      "runtime_unchanged": true,
+      "file": "mod_Data/Scripts/SuperPeasant/NativeEvents.pex",
+      "before_sha256": "eaad231aded2caaa18ba67d8c7bf2343449ba6d63bbfcbc4070725e30dba377d",
+      "after_sha256": "d831df3f7d9175a38247fad3861e2a906ea7fa5c3f954adb08d5a8d4631c6bb6",
+      "before_bytes": 6944,
+      "after_bytes": 6884
+    },
+    {
+      "format": "FO4 PEX3.9/game2",
+      "strings": 282,
+      "instructions": 818,
+      "header_fields_changed": [
+        0,
+        1,
+        2
+      ],
+      "doc_changes": [],
+      "tail_before_offset": 5994,
+      "tail_after_offset": 5934,
+      "tail_bytes": 12771,
+      "tail_sha256": "d7a1e0ec6a10c2bb36b893b74e6cfc7b0d65e3e1674300e1a5f12b5a298420c6",
+      "runtime_projection_sha256": "38f8da9bc9b107805c90f95ad4d9bef4059ac11d37e6851db13f0adf1f6f9ebf",
+      "runtime_unchanged": true,
+      "file": "mod_Data/Scripts/SuperPeasant/PeasantAlias.pex",
+      "before_sha256": "fed8911925e12bb007f7c0d328bbbfc1bb14b95ae88e451bb5b157c7e6b723d2",
+      "after_sha256": "b9cc11c2e99c4979dec5c45b8e1b83c03a72b98b21ac0fb9bc08e77bb3fec27c",
+      "before_bytes": 18765,
+      "after_bytes": 18705
+    },
+    {
+      "format": "FO4 PEX3.9/game2",
+      "strings": 109,
+      "instructions": 183,
+      "header_fields_changed": [
+        0,
+        1,
+        2
+      ],
+      "doc_changes": [],
+      "tail_before_offset": 1869,
+      "tail_after_offset": 1809,
+      "tail_bytes": 2855,
+      "tail_sha256": "74f33c640321a7bbf3a69d2218994d61adf350ec723eea70aa62b054c0791a7a",
+      "runtime_projection_sha256": "f17313afd27d3e0177180910ff3ce01a02673a0ff27233cd9da55b9f10733d16",
+      "runtime_unchanged": true,
+      "file": "mod_Data/Scripts/SuperPeasant/PlayerAlias.pex",
+      "before_sha256": "9de83962c64a67223c0f5018ca72ba745648058ab744fb55172087fa16066086",
+      "after_sha256": "f1af830514880e77eb0c3eb03fa4e6c8400686266ae6b673c5309b1472defdbf",
+      "before_bytes": 4724,
+      "after_bytes": 4664
+    },
+    {
+      "format": "FO4 PEX3.9/game2",
+      "strings": 201,
+      "instructions": 593,
+      "header_fields_changed": [
+        0,
+        1,
+        2
+      ],
+      "doc_changes": [],
+      "tail_before_offset": 4621,
+      "tail_after_offset": 4561,
+      "tail_bytes": 7838,
+      "tail_sha256": "bf7fbb89acc6ee02efae4d4da64c719fb8f43598779272e89d37209f287050e1",
+      "runtime_projection_sha256": "8f519a001b1200f8841936423cc055d30d630a4c3a50f9cb619f77047959ed20",
+      "runtime_unchanged": true,
+      "file": "mod_Data/Scripts/SuperPeasant/PunchEffect.pex",
+      "before_sha256": "8f8bdc0cf29d75d5737ba95634dd9f48530ff72370388b431a4af2c83910405e",
+      "after_sha256": "a2844eb02563aa599f289cada82d4e2ba240fbd5ce8cd11e8c101a01f46cd0e3",
+      "before_bytes": 12459,
+      "after_bytes": 12399
+    },
+    {
+      "format": "FO4 PEX3.9/game2",
+      "strings": 46,
+      "instructions": 43,
+      "header_fields_changed": [
+        0,
+        1,
+        2
+      ],
+      "doc_changes": [],
+      "tail_before_offset": 1103,
+      "tail_after_offset": 1043,
+      "tail_bytes": 668,
+      "tail_sha256": "a5af263f4d245956e5ba681f97b2170d19398f96f1d8cb9c35a79d03a0713309",
+      "runtime_projection_sha256": "45d18ccdf291b94fc6c6a26321395e1bceabb8a28094184a87d27e51e067bd35",
+      "runtime_unchanged": true,
+      "file": "mod_Data/Scripts/SuperPeasant/WhistleEffect.pex",
+      "before_sha256": "39ccf529e95c7a06e43c9d2092bfa86f6b6aff410241f4c287457c3b277ac5ea",
+      "after_sha256": "bdb2bca183e77027ea25ca1f0450dd81f9e3578504f33a9c43fbc7f7ab5fd416",
+      "before_bytes": 1771,
+      "after_bytes": 1711
+    },
+    {
+      "format": "FO4 PEX3.9/game2",
+      "strings": 119,
+      "instructions": 0,
+      "header_fields_changed": [
+        0,
+        1,
+        2
+      ],
+      "doc_changes": [
+        {
+          "index": 2,
+          "before_sha256": "980e99e849b7626be49b083a9c941e07f0559902ae4d7a61c525dfb0ef768bb2",
+          "after_sha256": "b6b5e9fb29b141af60bf15c7f78db5dbd248aefff97d6ca48388523735449579",
+          "reference_roles": [
+            "doc"
+          ],
+          "tail_reference_offsets": [
+            570
+          ]
+        }
+      ],
+      "tail_before_offset": 3535,
+      "tail_after_offset": 3461,
+      "tail_bytes": 1855,
+      "tail_sha256": "b11117a3ead65a637bfac4cea0ecce16c605b8af5c3ac334658aa00993b7f4ce",
+      "runtime_projection_sha256": "165138be24c8b73da9a2c646b871e0c2ba7452eb092be563d8dc341a77da2e4e",
+      "runtime_unchanged": true,
+      "file": "pkg_Data/Scripts/SuperPeasantNative.pex",
+      "before_sha256": "39d0bf11b9be2a2b42ad698310b5f8c02760f8d09eb7386a6d8c08790aec0e8e",
+      "after_sha256": "a96117b0c20f31e2162c66d82519b83496793d28d730602c7fc509d077e1c46f",
+      "before_bytes": 5390,
+      "after_bytes": 5316
+    },
+    {
+      "format": "AMD64 PE32+",
+      "rsds_offset": 3430044,
+      "allowed_path_offset": 3430068,
+      "allowed_path_bytes": 75,
+      "rsds_guid_age_sha256": "5bede831d136c4306ed80fe965cc5481a06a61605b135286fc84e8dc5d0ba320",
+      "all_other_bytes_sha256": "9a458d063bf86e351d0b0adcb2880fd0f04c0a63c219246c6c6ea5b5628e646a",
+      "executable_sections": [
+        {
+          "name": ".text",
+          "bytes": 2926080,
+          "sha256": "158f408058f792afea057208089a9a852c4474ef6a30832e8e61c9a31abef032"
+        }
+      ],
+      "runtime_unchanged": true,
+      "file": "pkg_Data/F4SE/Plugins/SuperPeasantNative.dll",
+      "before_sha256": "13c6f7162c6c9c023280b92571c510d4f4ee27e205ae398364a49d034615ca54",
+      "after_sha256": "05eebbe76763d558198aa4d6262855e1d2205251733b2426f9eb7d7b5c4937fc",
+      "before_bytes": 4301824,
+      "after_bytes": 4301824
+    }
+  ]
+}

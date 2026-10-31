@@ -1,0 +1,237 @@
+{
+  "version": "0.1.0-preview1",
+  "game_runtime": "1.11.240",
+  "f4se": "0.7.9",
+  "files": [
+    {
+      "path": "F4SE/Plugins/SuperPeasantNative.dll",
+      "bytes": 4301824,
+      "sha256": "b9dc1c9e4e8c767366d51ae4393171c9d516b4ee9df6627550e20af82be34f4a"
+    },
+    {
+      "path": "F4SE/Plugins/SuperPeasantNative.ini",
+      "bytes": 270638,
+      "sha256": "2114a9d020f296d9036b9182c7148d734aa4bd19d801523c8781cd8a039f9995"
+    },
+    {
+      "path": "Meshes/SuperPeasant/SuperPeasant.nif",
+      "bytes": 398051,
+      "sha256": "18e776960a78202b99c63a271e5679d05de81a1343ffd07ee824de5e4b340aa6"
+    },
+    {
+      "path": "Meshes/SuperPeasant/SuperPeasant_Rigid.nif",
+      "bytes": 400089,
+      "sha256": "b7adae0b462cb4551dc9e76ae7c995e3133f1f2c72b5b3175dd037e0300da5b5"
+    },
+    {
+      "path": "Meshes/SuperPeasant/SuperPeasant_TABS.nif",
+      "bytes": 388879,
+      "sha256": "8b72ad5487896a5c56d1580e0120dfa03dc980268cc70143b103b3e8ac589034"
+    },
+    {
+      "path": "Meshes/SuperPeasant/SuperPeasant_TABS_Rigid.nif",
+      "bytes": 393687,
+      "sha256": "43563bd9e843e10da17b14df60cd746b41cf9645c11860a1027fb82a0fd38dac"
+    },
+    {
+      "path": "Scripts/SuperPeasant/Brain.pex",
+      "bytes": 51915,
+      "sha256": "5f5e4eb55d6c2908b0c1141f93614e30d5f4183079f735e97d1c73d184c6c633"
+    },
+    {
+      "path": "Scripts/SuperPeasant/Controller.pex",
+      "bytes": 113971,
+      "sha256": "dbeba88e7c003344f851146c8f12dffc474c90b64c6f1267cfa74b96477bac1c"
+    },
+    {
+      "path": "Scripts/SuperPeasant/Lib.pex",
+      "bytes": 5227,
+      "sha256": "3967f762d32f731c8776e732f6515ff21880739183e04d5e00fe280d2ae6a136"
+    },
+    {
+      "path": "Scripts/SuperPeasant/NativeEvents.pex",
+      "bytes": 6884,
+      "sha256": "d831df3f7d9175a38247fad3861e2a906ea7fa5c3f954adb08d5a8d4631c6bb6"
+    },
+    {
+      "path": "Scripts/SuperPeasant/PeasantAlias.pex",
+      "bytes": 18705,
+      "sha256": "b9cc11c2e99c4979dec5c45b8e1b83c03a72b98b21ac0fb9bc08e77bb3fec27c"
+    },
+    {
+      "path": "Scripts/SuperPeasant/PlayerAlias.pex",
+      "bytes": 4664,
+      "sha256": "f1af830514880e77eb0c3eb03fa4e6c8400686266ae6b673c5309b1472defdbf"
+    },
+    {
+      "path": "Scripts/SuperPeasant/PunchEffect.pex",
+      "bytes": 12399,
+      "sha256": "a2844eb02563aa599f289cada82d4e2ba240fbd5ce8cd11e8c101a01f46cd0e3"
+    },
+    {
+      "path": "Scripts/SuperPeasant/WhistleEffect.pex",
+      "bytes": 1711,
+      "sha256": "bdb2bca183e77027ea25ca1f0450dd81f9e3578504f33a9c43fbc7f7ab5fd416"
+    },
+    {
+      "path": "Scripts/SuperPeasantNative.pex",
+      "bytes": 5316,
+      "sha256": "a96117b0c20f31e2162c66d82519b83496793d28d730602c7fc509d077e1c46f"
+    },
+    {
+      "path": "Sound/FX/SuperPeasant/Death/Super_Peasant_Death_Vocals-001.wav",
+      "bytes": 245608,
+      "sha256": "b934e807091ecfeb54b85dd0fe786f516c8e7ffaae44e14c456ebd8a7f5c391b"
+    },
+    {
+      "path": "Sound/FX/SuperPeasant/Death/Super_Peasant_Death_Vocals-002.wav",
+      "bytes": 254406,
+      "sha256": "4ea09e802f5acf6d9b22109bed7544b06ac407bde72efee630f4c39c66ae3ec3"
+    },
+    {
+      "path": "Sound/FX/SuperPeasant/Death/Super_Peasant_Death_Vocals-003.wav",
+      "bytes": 207484,
+      "sha256": "d53899bb267feba497faadb0c12f4aa21711d36f3c36c13b87cda2c45cdac049"
+    },
+    {
+      "path": "Sound/FX/SuperPeasant/Death/Super_Peasant_Death_Vocals-004.wav",
+      "bytes": 160562,
+      "sha256": "ff78ecc3e9cbcc1701825bba98b526c8a5e9db694a2d98fe324814618410c561"
+    },
+    {
+      "path": "Sound/FX/SuperPeasant/Death/Super_Peasant_Death_Vocals-005.wav",
+      "bytes": 228810,
+      "sha256": "2c642d4d4b956cce8a61fa081d492e6cdcd608f3a8b0acebeea65df19b0c8e73"
+    },
+    {
+      "path": "Sound/FX/SuperPeasant/FistLoop/push_loop_01_mono.wav",
+      "bytes": 705644,
+      "sha256": "64c3cbc4902c07fe82f29d516ae1b4de4a9a31d1e060611c41d137990003427f"
+    },
+    {
+      "path": "Sound/FX/SuperPeasant/Hit/Gauntlet_HitFantasy_Gauntlet-001.wav",
+      "bytes": 97840,
+      "sha256": "c219f674a001e7fe1f650bfdf730d25de1b1076e42196d375331d2d1ddf97888"
+    },
+    {
+      "path": "Sound/FX/SuperPeasant/Hit/Gauntlet_HitFantasy_Gauntlet-002.wav",
+      "bytes": 103914,
+      "sha256": "4a245cba3a71a120e4a91d031095d8a9c5d6627c643982419776297011235d52"
+    },
+    {
+      "path": "Sound/FX/SuperPeasant/Hit/Gauntlet_HitFantasy_Gauntlet-003.wav",
+      "bytes": 98400,
+      "sha256": "8107e3bd3e2094c75bce604a4c31c4f88cbb9e393f4c2bb2d94ed1554f0d1c90"
+    },
+    {
+      "path": "Sound/FX/SuperPeasant/Hit/Gauntlet_HitFantasy_Gauntlet-004.wav",
+      "bytes": 132888,
+      "sha256": "c23a8fc38dbf2129da3c82285fe3fb00e193c75812c6ac3b75d7fc7b10dbc410"
+    },
+    {
+      "path": "Sound/FX/SuperPeasant/Hit/Gauntlet_HitFantasy_Gauntlet-005.wav",
+      "bytes": 126782,
+      "sha256": "a4bb6a71fe1729a4acd4b58984d451bfc97ad0c16f9fba7bee5be19879c6e859"
+    },
+    {
+      "path": "Sound/FX/SuperPeasant/Spawn/place_unit_1.wav",
+      "bytes": 20908,
+      "sha256": "e7274b645c7bddcc8da679ee2a997a9162849069292527804be9240e97b62dbd"
+    },
+    {
+      "path": "Sound/FX/SuperPeasant/Swing/Gauntlet_SwingFantasy_Gauntlet-001.wav",
+      "bytes": 51992,
+      "sha256": "ba1ce4af34d7ebe387fe22df15b2ff72b563f799fed3da122a2f7004ff1615ee"
+    },
+    {
+      "path": "Sound/FX/SuperPeasant/Swing/Gauntlet_SwingFantasy_Gauntlet-002.wav",
+      "bytes": 53928,
+      "sha256": "525cbe4d9e531c28fecdebb2960927eaa5d977714826478fdff7fe27996cddc7"
+    },
+    {
+      "path": "Sound/FX/SuperPeasant/Swing/Gauntlet_SwingFantasy_Gauntlet-003.wav",
+      "bytes": 39116,
+      "sha256": "91fd4f637a39df924e323a2ddb72d2f5d9cb7a94e6a932337efbc40f7cbb569c"
+    },
+    {
+      "path": "Sound/FX/SuperPeasant/Swing/Gauntlet_SwingFantasy_Gauntlet-004.wav",
+      "bytes": 60396,
+      "sha256": "15b4472bd0de2267beded7d9e0ded1b501b0f14fdc9be8ecf8ceb3f68d22cf52"
+    },
+    {
+      "path": "Sound/FX/SuperPeasant/Swing/Gauntlet_SwingFantasy_Gauntlet-005.wav",
+      "bytes": 60908,
+      "sha256": "66d5d48fa5d63b76427d9c088856d424a239b7af95a102acd2ed20ce5ba6fd21"
+    },
+    {
+      "path": "Sound/FX/SuperPeasant/Swing/Gauntlet_SwingFantasy_Gauntlet-006.wav",
+      "bytes": 57324,
+      "sha256": "bf5e89ddfab1f311da7708519883d17e5a0dbb117413ea3a9967cb5d85754008"
+    },
+    {
+      "path": "Sound/FX/SuperPeasant/Vocal/Super_Peasant_Attack_Vocals-001.wav",
+      "bytes": 277866,
+      "sha256": "0641cd09b2c43fb23a9000f270e7bf1d6f5b63550c1546c63d65ef325ae360fa"
+    },
+    {
+      "path": "Sound/FX/SuperPeasant/Vocal/Super_Peasant_Attack_Vocals-002.wav",
+      "bytes": 304260,
+      "sha256": "d54c0686506cf3c91917f590bebfbdb161fbf56ed556bcbc645cba96bed3ab84"
+    },
+    {
+      "path": "Sound/FX/SuperPeasant/Vocal/Super_Peasant_Attack_Vocals-003.wav",
+      "bytes": 277866,
+      "sha256": "e1e55f17701bc9f4611b1a630cbdc00b3d441b3748e03518eb842dfd44b39c14"
+    },
+    {
+      "path": "Sound/FX/SuperPeasant/Vocal/Super_Peasant_Attack_Vocals-004.wav",
+      "bytes": 342384,
+      "sha256": "d8200aebc52103eb4ba23f4b67e01907948cc75151d22a37b67e3130d5ea4dcd"
+    },
+    {
+      "path": "Sound/FX/SuperPeasant/Vocal/Super_Peasant_Attack_Vocals-005.wav",
+      "bytes": 336520,
+      "sha256": "9041d993b719dd9ae639dfa2243b055266ff8fcd14c43d42b72da3940d4a7c39"
+    },
+    {
+      "path": "Sound/FX/SuperPeasant/Vocal/Super_Peasant_Attack_Vocals-006.wav",
+      "bytes": 295462,
+      "sha256": "6bb790d74ff427656a9d9399bd11b926cf05bff3fae36790426f45e8d0807326"
+    },
+    {
+      "path": "SuperPeasant.esp",
+      "bytes": 12514,
+      "sha256": "63a44db9068434807184f692587eb19cf4fc55f157623d0cd886a549249909c2"
+    },
+    {
+      "path": "Textures/SuperPeasant/superpeasant_n.dds",
+      "bytes": 1152,
+      "sha256": "3df025a7ab2ec8ba23d027ae3d2b1530b292521dc5a9179a20ca070576ee328a"
+    },
+    {
+      "path": "Textures/SuperPeasant/superpeasant_opm_d.dds",
+      "bytes": 21632,
+      "sha256": "43eb2bcf50be3a50e9c637c9ec6848ebfffda5391c4497f34372aa5f67b41273"
+    },
+    {
+      "path": "Textures/SuperPeasant/superpeasant_opm_s.dds",
+      "bytes": 1152,
+      "sha256": "7c61d240324ace0b31dd38989a7d1e2c01c9c68acaa003595f1a7c3580df8e72"
+    },
+    {
+      "path": "Textures/SuperPeasant/superpeasant_red_d.dds",
+      "bytes": 21632,
+      "sha256": "4f79f73fdccbcf1d3135329a2f66a7acbe8177ff0c4e8c53e42cf8d07d3d94b9"
+    },
+    {
+      "path": "Textures/SuperPeasant/superpeasant_s.dds",
+      "bytes": 1152,
+      "sha256": "9faf4daae3aa248a97f20af86163b31eec37adef2bb746adb30776110fb14f60"
+    }
+  ],
+  "file_count": 45,
+  "bytes": 10974462,
+  "source": "https://github.com/0mis/fallout4-super-peasant",
+  "public_metadata_sanitized": true,
+  "executable_instructions_unchanged": true
+}

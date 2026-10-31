@@ -1,0 +1,7026 @@
+{
+ "meta": {
+  "what": "TABS Super Peasant (UNIT_LEGACY_LEG_SUPERPEASANT, blueprint Leg_SuperPEASANT #63078, unit base #18395, fists Leg_SuperP_W_1 #18173, Wings_Leg_SuperP #9806)",
+  "spec": "fo4/v2/spec/TABS_MOTION_SPEC.md (laws, order of operations, marks [V]/[E])",
+  "generated_by": "fo4/v2/spec/tools/gen_tabs_constants.py from the read-only dumps listed in its docstring",
+  "units": "SI: metres, kilograms, seconds, radians unless a key says _deg. Positions are Unity frame: +x right, +y up, +z forward (left-handed interpretation, standard cross-product formula). '_s1' = at unit size s = 1 (multiply lengths by s). 'base' masses are before the x M = 5 s^2 multiplier.",
+  "verified": "sections 'raw_*' are verbatim game data [V]; 'laws' are transcribed from the decompiled C# [V] unless a value is listed under 'estimates' [E]"
+ },
+ "raw_physics_manager": {
+  "m_Gravity": {
+   "x": 0.0,
+   "y": -20.0,
+   "z": 0.0
+  },
+  "m_DefaultMaterial": {
+   "m_FileID": 0,
+   "m_PathID": 0
+  },
+  "m_BounceThreshold": 2.0,
+  "m_SleepThreshold": 0.004999999888241291,
+  "m_DefaultContactOffset": 0.009999999776482582,
+  "m_DefaultSolverIterations": 6,
+  "m_DefaultSolverVelocityIterations": 1,
+  "m_QueriesHitBackfaces": false,
+  "m_QueriesHitTriggers": false,
+  "m_EnableAdaptiveForce": false,
+  "m_ClothInterCollisionDistance": 0.0,
+  "m_ClothInterCollisionStiffness": 0.0,
+  "m_ContactsGeneration": 1,
+  "m_LayerCollisionMatrix": [
+   "d443dfff",
+   "d443dfff",
+   "d443dfff",
+   "ffffffff",
+   "d443dfff",
+   "d443dfff",
+   "ffffffff",
+   "ffffffff",
+   "d443dfff",
+   "d453dfff",
+   "d443dfff",
+   "d443dfff",
+   "d443dfff",
+   "944200c8",
+   "d463dfff",
+   "d443dfff",
+   "d443dfff",
+   "dc43ffff",
+   "944000c8",
+   "944000c8",
+   "944002c8",
+   "944040c8",
+   "d47fffff",
+   "948000c8",
+   "940000c8",
+   "940000c8",
+   "d7ffffff",
+   "800200c8",
+   "d7ffffff",
+   "000000c8",
+   "9443dfff",
+   "dfffffff"
+  ],
+  "m_AutoSimulation": true,
+  "m_AutoSyncTransforms": true,
+  "m_ReuseCollisionCallbacks": true,
+  "m_ClothInterCollisionSettingsToggle": false,
+  "m_ClothGravity": {
+   "x": 0.0,
+   "y": -9.8100004196167,
+   "z": 0.0
+  },
+  "m_ContactPairsMode": 0,
+  "m_BroadphaseType": 0,
+  "m_WorldBounds": {
+   "m_Center": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+   },
+   "m_Extent": {
+    "x": 250.0,
+    "y": 250.0,
+    "z": 250.0
+   }
+  },
+  "m_WorldSubdivisions": 8,
+  "m_FrictionType": 0,
+  "m_EnableEnhancedDeterminism": false,
+  "m_EnableUnifiedHeightmaps": true,
+  "m_SolverType": 0,
+  "m_DefaultMaxAngularSpeed": 7.0
+ },
+ "raw_time_manager": {
+  "Fixed Timestep": 0.01666666753590107,
+  "Maximum Allowed Timestep": 0.01666666753590107,
+  "m_TimeScale": 1.0,
+  "Maximum Particle Timestep": 0.0333000011742115
+ },
+ "raw_blueprint_selected": {
+  "m_Name": "Leg_SuperPEASANT",
+  "health": 100000.0,
+  "massMultiplier": 5.0,
+  "dragMultiplier": 3.0,
+  "balanceMultiplier": 6.0,
+  "balanceForceMultiplier": 0.0010000000474974513,
+  "animationMultiplier": 2.0,
+  "movementSpeedMuiltiplier": 2.0,
+  "stepMultiplier": 1.0,
+  "ArmLimitMultiplier": 1.0,
+  "neckLimitMultiplier": 0.0,
+  "sizeMultiplier": 1.0,
+  "minSizeRandom": 1.100000023841858,
+  "maxSizeRandom": 1.2000000476837158,
+  "turnSpeed": 500.0,
+  "turnSpeedCurve": {
+   "m_Curve": [
+    {
+     "time": 0.0,
+     "value": 1.0,
+     "inSlope": 0.0,
+     "outSlope": 0.0,
+     "weightedMode": 0,
+     "inWeight": 0.0,
+     "outWeight": 0.0
+    },
+    {
+     "time": 1.0,
+     "value": 1.0,
+     "inSlope": 0.0,
+     "outSlope": 0.0,
+     "weightedMode": 0,
+     "inWeight": 0.0,
+     "outWeight": 0.0
+    }
+   ],
+   "m_PreInfinity": 2,
+   "m_PostInfinity": 2,
+   "m_RotationOrder": 4
+  },
+  "weaponSeparation": 0.20000000298023224,
+  "scaleWeapons": 0,
+  "targetingPriorityMultiplier": 0.0,
+  "attackDistanceCurve": {
+   "m_Curve": [
+    {
+     "time": 0.029999999329447746,
+     "value": 0.0,
+     "inSlope": 17.615367889404297,
+     "outSlope": 17.615367889404297,
+     "weightedMode": 0,
+     "inWeight": 0.3333333432674408,
+     "outWeight": 0.44660311937332153
+    },
+    {
+     "time": 0.06813360005617142,
+     "value": 0.5,
+     "inSlope": 4.523391246795654,
+     "outSlope": 4.523391246795654,
+     "weightedMode": 0,
+     "inWeight": 0.3333333432674408,
+     "outWeight": 0.296875
+    },
+    {
+     "time": 0.3025210201740265,
+     "value": 1.0,
+     "inSlope": 0.0,
+     "outSlope": 0.0,
+     "weightedMode": 0,
+     "inWeight": 0.3333333432674408,
+     "outWeight": 0.3333333432674408
+    }
+   ],
+   "m_PreInfinity": 2,
+   "m_PostInfinity": 2,
+   "m_RotationOrder": 4
+  },
+  "holdinigWithTwoHands": 0,
+  "objectsToSpawnAsChildren": [
+   {
+    "m_FileID": 0,
+    "m_PathID": 9806
+   }
+  ],
+  "_all_numeric_fields": {
+   "m_Enabled": 1,
+   "foodCost": 5.0,
+   "costTweak": 0.0,
+   "forceCost": 9999999,
+   "m_isSecret": 1,
+   "excludeFromOnlineMultiplayer": 0,
+   "holdinigWithTwoHands": 0,
+   "health": 100000.0,
+   "movementSpeedMuiltiplier": 2.0,
+   "animationMultiplier": 2.0,
+   "stepMultiplier": 1.0,
+   "balanceMultiplier": 6.0,
+   "balanceForceMultiplier": 0.0010000000474974513,
+   "NavmeshType": 0,
+   "ArmLimitMultiplier": 1.0,
+   "neckLimitMultiplier": 0.0,
+   "scaleWeapons": 0,
+   "weaponSeparation": 0.20000000298023224,
+   "massMultiplier": 5.0,
+   "minSizeRandom": 1.100000023841858,
+   "maxSizeRandom": 1.2000000476837158,
+   "sizeMultiplier": 1.0,
+   "dragMultiplier": 3.0,
+   "targetingPriorityMultiplier": 0.0,
+   "excludeFromWinCondition": 0,
+   "removeCloseRangeMiss": 0,
+   "Head": 0,
+   "Hip": 0,
+   "Torso": 0,
+   "ArmLeft": 0,
+   "ElbowLeft": 0,
+   "ArmRight": 0,
+   "ElbowRight": 0,
+   "LegLeft": 0,
+   "KneeLeft": 0,
+   "LegRight": 0,
+   "KneeRight": 0,
+   "WristLeft": 0,
+   "WristRight": 0,
+   "FootLeft": 0,
+   "FootRight": 0,
+   "turnSpeed": 500.0
+  }
+ },
+ "raw_bell_curve": {
+  "keys": [
+   [
+    0.0,
+    0.0,
+    10.25624942779541,
+    10.25624942779541,
+    0
+   ],
+   [
+    0.06633259356021881,
+    0.37187498807907104,
+    1.3374613523483276,
+    1.3374613523483276,
+    0
+   ],
+   [
+    0.18463706970214844,
+    0.450132817029953,
+    0.33372360467910767,
+    0.33372360467910767,
+    0
+   ],
+   [
+    0.5,
+    0.5,
+    -0.0,
+    -0.0,
+    0
+   ],
+   [
+    0.8208364844322205,
+    0.5369768142700195,
+    0.170027956366539,
+    0.170027956366539,
+    0
+   ],
+   [
+    0.9457157254219055,
+    0.653802216053009,
+    2.9941930770874023,
+    2.9941930770874023,
+    0
+   ],
+   [
+    1.0,
+    1.0,
+    9.306598663330078,
+    9.306598663330078,
+    0
+   ]
+  ],
+  "pre": 2,
+  "post": 2
+ },
+ "raw_physic_materials": {
+  "7524": {
+   "m_Name": "BodyDefault",
+   "dynamicFriction": 0.5,
+   "staticFriction": 0.0,
+   "bounciness": 0.0,
+   "frictionCombine": 0,
+   "bounceCombine": 0
+  },
+  "7525": {
+   "m_Name": "Foot",
+   "dynamicFriction": 2.0,
+   "staticFriction": 0.0,
+   "bounciness": 0.0,
+   "frictionCombine": 3,
+   "bounceCombine": 0
+  },
+  "7530": {
+   "m_Name": "Slippery",
+   "dynamicFriction": 0.0,
+   "staticFriction": 0.0,
+   "bounciness": 0.0,
+   "frictionCombine": 1,
+   "bounceCombine": 0
+  }
+ },
+ "raw_rigs": [
+  {
+   "name": "Head",
+   "rigidbody_pid": 55410,
+   "layer": 0,
+   "allRigs_index": 0,
+   "base_mass_kg": 10.0,
+   "prefab_drag": 3.0,
+   "prefab_angular_drag": 3.0,
+   "use_gravity": true,
+   "interpolate": 0,
+   "constraints": 0,
+   "collision_detection": 0,
+   "local_pos_root_s1": [
+    0.0,
+    1.7003899,
+    -0.0058327
+   ],
+   "local_rot_xyzw": [
+    -0.0,
+    -0.0,
+    -0.0,
+    1.0
+   ],
+   "local_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "colliders": [
+    {
+     "kind": "SphereCollider",
+     "pid": 57475,
+     "child": "Collider",
+     "layer": 0,
+     "enabled": true,
+     "trigger": false,
+     "material": "BodyDefault",
+     "child_local_pos": [
+      0.0,
+      0.195,
+      0.031
+     ],
+     "child_local_rot_xyzw": [
+      -0.0,
+      -0.0,
+      -0.0,
+      1.0
+     ],
+     "child_local_scale": [
+      0.1902426,
+      0.1902425,
+      0.1902425
+     ],
+     "center": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "center_rig_frame_scaled_s1": [
+      0.0,
+      0.195,
+      0.031
+     ],
+     "radius": 0.5,
+     "radius_scaled_s1": 0.0951213
+    },
+    {
+     "kind": "CapsuleCollider",
+     "pid": 57765,
+     "child": "Collider",
+     "layer": 0,
+     "enabled": true,
+     "trigger": false,
+     "material": "BodyDefault",
+     "child_local_pos": [
+      -0.003,
+      0.0330004,
+      0.0229998
+     ],
+     "child_local_rot_xyzw": [
+      0.0950118,
+      0.0,
+      0.0,
+      0.9954762
+     ],
+     "child_local_scale": [
+      0.1237858,
+      0.1237858,
+      0.1237858
+     ],
+     "center": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "center_rig_frame_scaled_s1": [
+      -0.003,
+      0.0330004,
+      0.0229998
+     ],
+     "radius": 0.5,
+     "height": 2.0,
+     "direction": 1,
+     "radius_scaled_s1": 0.0618929,
+     "height_scaled_s1": 0.2475716,
+     "axis_rig_frame": [
+      0.0,
+      0.9819455,
+      0.189164
+     ]
+    }
+   ],
+   "behaviours": [
+    {
+     "type": "Head",
+     "pid": 69750,
+     "data": {}
+    },
+    {
+     "type": "DamageMultiplier",
+     "pid": 69725,
+     "data": {
+      "multiplier": 2.0
+     }
+    }
+   ],
+   "children": {
+    "SpawnEyes": {
+     "type": "EyeSpawner",
+     "local_pos": [
+      0.0,
+      0.1890004,
+      0.1237998
+     ],
+     "local_rot_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "local_scale": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    "PossesionCamera": {
+     "type": "PossesionCamera",
+     "local_pos": [
+      0.0,
+      0.177,
+      0.204
+     ],
+     "local_rot_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "local_scale": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    }
+   },
+   "joint": {
+    "pid": 59376,
+    "connected_to": "Torso",
+    "anchor": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "connected_anchor": [
+     0.0,
+     0.3468819,
+     -0.0066261
+    ],
+    "auto_configure_connected_anchor": true,
+    "axis": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "secondary_axis": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "motion_xyz": [
+     0,
+     0,
+     0
+    ],
+    "angular_motion_xyz": [
+     1,
+     1,
+     1
+    ],
+    "low_angular_x": -45.0,
+    "high_angular_x": 45.0,
+    "angular_y": 45.0,
+    "angular_z": 45.0,
+    "limit_bounciness": [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "angular_x_limit_spring": [
+     0.0,
+     0.0
+    ],
+    "angular_yz_limit_spring": [
+     0.0,
+     0.0
+    ],
+    "angular_x_drive_prefab": [
+     15.0,
+     2.0,
+     3.4028232635611926e+38
+    ],
+    "angular_yz_drive_prefab": [
+     15.0,
+     2.0,
+     3.4028232635611926e+38
+    ],
+    "slerp_drive_prefab_unused": [
+     500.0,
+     50.0
+    ],
+    "rotation_drive_mode": 0,
+    "target_rotation": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "target_angular_velocity": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "projection_mode": 1,
+    "projection_distance": 0.1,
+    "projection_angle": 180.0,
+    "configured_in_world_space": false,
+    "swap_bodies": false,
+    "enable_collision": false,
+    "enable_preprocessing": false,
+    "mass_scale": 1.0,
+    "connected_mass_scale": 1.0,
+    "break_force": Infinity,
+    "break_torque": Infinity,
+    "game_drive_rule": "in game X and YZ drives are both angular_x_drive_prefab * M (RigidbodyHolder.cs:109-120)"
+   },
+   "derived_geometry_GEO": {
+    "collider_com_rig_local_scaled": [
+     -0.0012,
+     0.1289,
+     0.0277
+    ],
+    "inertia_diag_base_kgm2_rig_axes": [
+     0.10387,
+     0.02921,
+     0.10332
+    ],
+    "inertia_principal_base_kgm2": [
+     0.02882,
+     0.10369,
+     0.10389
+    ],
+    "aabb_world_s1": [
+     [
+      -0.0951,
+      1.6107,
+      -0.07
+     ],
+     [
+      0.0951,
+      1.9905,
+      0.1203
+     ]
+    ],
+    "joint_anchor_world_s1": [
+     0.0,
+     1.7004,
+     -0.0058
+    ],
+    "joint_axis_world": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "joint_secondary_world": [
+     0.0,
+     1.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "name": "Hip",
+   "rigidbody_pid": 55409,
+   "layer": 0,
+   "allRigs_index": 1,
+   "base_mass_kg": 25.0,
+   "prefab_drag": 5.0,
+   "prefab_angular_drag": 5.0,
+   "use_gravity": true,
+   "interpolate": 0,
+   "constraints": 0,
+   "collision_detection": 0,
+   "local_pos_root_s1": [
+    0.0,
+    1.0756741,
+    -0.0473366
+   ],
+   "local_rot_xyzw": [
+    -0.0,
+    -0.0,
+    -0.0,
+    1.0
+   ],
+   "local_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "colliders": [
+    {
+     "kind": "CapsuleCollider",
+     "pid": 57771,
+     "child": "Collider",
+     "layer": 0,
+     "enabled": true,
+     "trigger": false,
+     "material": "BodyDefault",
+     "child_local_pos": [
+      0.0,
+      -0.015,
+      0.027
+     ],
+     "child_local_rot_xyzw": [
+      -0.0,
+      -0.0,
+      -0.7071071,
+      0.7071065
+     ],
+     "child_local_scale": [
+      0.25,
+      0.18,
+      0.25
+     ],
+     "center": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "center_rig_frame_scaled_s1": [
+      0.0,
+      -0.015,
+      0.027
+     ],
+     "radius": 0.5,
+     "height": 2.0,
+     "direction": 1,
+     "radius_scaled_s1": 0.125,
+     "height_scaled_s1": 0.36,
+     "axis_rig_frame": [
+      1.0,
+      -9.017408e-07,
+      0.0
+     ]
+    },
+    {
+     "kind": "CapsuleCollider",
+     "pid": 57773,
+     "child": "Collider (1)",
+     "layer": 0,
+     "enabled": true,
+     "trigger": false,
+     "material": "BodyDefault",
+     "child_local_pos": [
+      0.0,
+      0.144,
+      0.049
+     ],
+     "child_local_rot_xyzw": [
+      -0.0,
+      -0.0,
+      -0.7071071,
+      0.7071065
+     ],
+     "child_local_scale": [
+      0.235,
+      0.1438014,
+      0.235
+     ],
+     "center": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "center_rig_frame_scaled_s1": [
+      0.0,
+      0.144,
+      0.049
+     ],
+     "radius": 0.5,
+     "height": 2.0,
+     "direction": 1,
+     "radius_scaled_s1": 0.1175,
+     "height_scaled_s1": 0.2876028,
+     "axis_rig_frame": [
+      1.0,
+      -9.017408e-07,
+      0.0
+     ]
+    }
+   ],
+   "behaviours": [
+    {
+     "type": "Hip",
+     "pid": 69777,
+     "data": {}
+    }
+   ],
+   "children": {},
+   "derived_geometry_GEO": {
+    "collider_com_rig_local_scaled": [
+     0.0,
+     0.0487,
+     0.0358
+    ],
+    "inertia_diag_base_kgm2_rig_axes": [
+     0.31642,
+     0.2357,
+     0.38455
+    ],
+    "inertia_principal_base_kgm2": [
+     0.23279,
+     0.31642,
+     0.38746
+    ],
+    "aabb_world_s1": [
+     [
+      -0.18,
+      0.9357,
+      -0.1453
+     ],
+     [
+      0.18,
+      1.3372,
+      0.1192
+     ]
+    ]
+   }
+  },
+  {
+   "name": "Torso",
+   "rigidbody_pid": 55412,
+   "layer": 14,
+   "allRigs_index": 2,
+   "base_mass_kg": 25.0,
+   "prefab_drag": 5.0,
+   "prefab_angular_drag": 5.0,
+   "use_gravity": true,
+   "interpolate": 0,
+   "constraints": 0,
+   "collision_detection": 0,
+   "local_pos_root_s1": [
+    0.0,
+    1.353508,
+    0.0007935
+   ],
+   "local_rot_xyzw": [
+    -0.0,
+    -0.0,
+    -0.0,
+    1.0
+   ],
+   "local_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "colliders": [
+    {
+     "kind": "CapsuleCollider",
+     "pid": 57777,
+     "child": "Collider (1)",
+     "layer": 14,
+     "enabled": true,
+     "trigger": false,
+     "material": "BodyDefault",
+     "child_local_pos": [
+      -0.0,
+      0.0892,
+      0.0061
+     ],
+     "child_local_rot_xyzw": [
+      0.0050151,
+      -0.0,
+      -4e-07,
+      0.9999874
+     ],
+     "child_local_scale": [
+      0.2684,
+      0.2017152,
+      0.2684
+     ],
+     "center": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "center_rig_frame_scaled_s1": [
+      0.0,
+      0.0892,
+      0.0061
+     ],
+     "radius": 0.5,
+     "height": 2.0,
+     "direction": 1,
+     "radius_scaled_s1": 0.1342,
+     "height_scaled_s1": 0.4034304,
+     "axis_rig_frame": [
+      7.999899e-07,
+      0.9999497,
+      0.01003007
+     ]
+    },
+    {
+     "kind": "CapsuleCollider",
+     "pid": 57763,
+     "child": "Collider",
+     "layer": 14,
+     "enabled": true,
+     "trigger": false,
+     "material": "BodyDefault",
+     "child_local_pos": [
+      0.0,
+      0.241,
+      0.0
+     ],
+     "child_local_rot_xyzw": [
+      -0.0,
+      -0.0,
+      -0.7071071,
+      0.7071065
+     ],
+     "child_local_scale": [
+      0.22,
+      0.2267767,
+      0.22
+     ],
+     "center": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "center_rig_frame_scaled_s1": [
+      0.0,
+      0.241,
+      0.0
+     ],
+     "radius": 0.5,
+     "height": 2.0,
+     "direction": 1,
+     "radius_scaled_s1": 0.11,
+     "height_scaled_s1": 0.4535534,
+     "axis_rig_frame": [
+      1.0,
+      -9.017408e-07,
+      0.0
+     ]
+    }
+   ],
+   "behaviours": [
+    {
+     "type": "Torso",
+     "pid": 69757,
+     "data": {}
+    },
+    {
+     "type": "CurveAnimation",
+     "pid": 69729,
+     "data": {
+      "animationData": "ptr(0,63270)",
+      "isRight": 1,
+      "invertLocalAxis": 0,
+      "uppHillHelp": 0.0,
+      "multiplier": 1.0
+     }
+    },
+    {
+     "type": "SpawnFreezeBody",
+     "pid": 69736,
+     "data": {
+      "freezeY": 0,
+      "freezeRotation": 0
+     }
+    }
+   ],
+   "children": {
+    "MountPos": {
+     "type": "MountPos",
+     "local_pos": [
+      -0.0,
+      0.5,
+      -0.25
+     ],
+     "local_rot_xyzw": [
+      -3e-07,
+      2.8e-06,
+      1e-07,
+      -1.0
+     ],
+     "local_scale": [
+      1.2000005,
+      1.1999999,
+      1.2000005
+     ]
+    }
+   },
+   "joint": {
+    "pid": 59380,
+    "connected_to": "Hip",
+    "anchor": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "connected_anchor": [
+     0.0,
+     0.2778339,
+     0.04813
+    ],
+    "auto_configure_connected_anchor": true,
+    "axis": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "secondary_axis": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "motion_xyz": [
+     0,
+     0,
+     0
+    ],
+    "angular_motion_xyz": [
+     1,
+     1,
+     1
+    ],
+    "low_angular_x": -5.0,
+    "high_angular_x": 5.0,
+    "angular_y": 15.0,
+    "angular_z": 0.0,
+    "limit_bounciness": [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "angular_x_limit_spring": [
+     0.0,
+     0.0
+    ],
+    "angular_yz_limit_spring": [
+     0.0,
+     0.0
+    ],
+    "angular_x_drive_prefab": [
+     100.0,
+     15.0,
+     3.4028232635611926e+38
+    ],
+    "angular_yz_drive_prefab": [
+     100.0,
+     15.0,
+     3.4028232635611926e+38
+    ],
+    "slerp_drive_prefab_unused": [
+     0.0,
+     0.0
+    ],
+    "rotation_drive_mode": 0,
+    "target_rotation": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "target_angular_velocity": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "projection_mode": 1,
+    "projection_distance": 0.1,
+    "projection_angle": 180.0,
+    "configured_in_world_space": false,
+    "swap_bodies": false,
+    "enable_collision": false,
+    "enable_preprocessing": false,
+    "mass_scale": 1.0,
+    "connected_mass_scale": 1.0,
+    "break_force": Infinity,
+    "break_torque": Infinity,
+    "game_drive_rule": "in game X and YZ drives are both angular_x_drive_prefab * M (RigidbodyHolder.cs:109-120)"
+   },
+   "derived_geometry_GEO": {
+    "collider_com_rig_local_scaled": [
+     0.0,
+     0.1573,
+     0.0034
+    ],
+    "inertia_diag_base_kgm2_rig_axes": [
+     0.38684,
+     0.28399,
+     0.49775
+    ],
+    "inertia_principal_base_kgm2": [
+     0.28387,
+     0.38684,
+     0.49787
+    ],
+    "aabb_world_s1": [
+     [
+      -0.2268,
+      1.241,
+      -0.128
+     ],
+     [
+      0.2268,
+      1.7045,
+      0.1418
+     ]
+    ],
+    "joint_anchor_world_s1": [
+     0.0,
+     1.3535,
+     0.0008
+    ],
+    "joint_axis_world": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "joint_secondary_world": [
+     0.0,
+     1.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "name": "Arm_Left",
+   "rigidbody_pid": 55408,
+   "layer": 0,
+   "allRigs_index": 3,
+   "base_mass_kg": 5.0,
+   "prefab_drag": 3.0,
+   "prefab_angular_drag": 3.0,
+   "use_gravity": true,
+   "interpolate": 0,
+   "constraints": 0,
+   "collision_detection": 0,
+   "local_pos_root_s1": [
+    -0.1476517,
+    1.6149406,
+    -0.0198631
+   ],
+   "local_rot_xyzw": [
+    6e-07,
+    -0.7071072,
+    -1e-07,
+    0.7071065
+   ],
+   "local_scale": [
+    1.0800058,
+    1.0800005,
+    1.0800053
+   ],
+   "colliders": [
+    {
+     "kind": "CapsuleCollider",
+     "pid": 57764,
+     "child": "Collider",
+     "layer": 0,
+     "enabled": true,
+     "trigger": false,
+     "material": "BodyDefault",
+     "child_local_pos": [
+      0.0,
+      -0.005,
+      0.1757
+     ],
+     "child_local_rot_xyzw": [
+      -0.7071066,
+      -0.0,
+      -1e-07,
+      0.7071071
+     ],
+     "child_local_scale": [
+      0.1400543,
+      0.20072,
+      0.1400543
+     ],
+     "center": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "center_rig_frame_scaled_s1": [
+      0.0,
+      -0.005400029,
+      0.189757
+     ],
+     "radius": 0.4,
+     "height": 2.0,
+     "direction": 1,
+     "radius_scaled_s1": 0.06050378,
+     "height_scaled_s1": 0.4335575,
+     "axis_rig_frame": [
+      1.414214e-07,
+      5.124729e-07,
+      -1.0
+     ]
+    }
+   ],
+   "behaviours": [
+    {
+     "type": "CurveAnimation",
+     "pid": 69740,
+     "data": {
+      "animationData": "ptr(0,63266)",
+      "isRight": 0,
+      "invertLocalAxis": 0,
+      "uppHillHelp": 0.0,
+      "multiplier": 1.0
+     }
+    },
+    {
+     "type": "ArmLeft",
+     "pid": 69754,
+     "data": {}
+    }
+   ],
+   "children": {},
+   "joint": {
+    "pid": 59382,
+    "connected_to": "Torso",
+    "anchor": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "connected_anchor": [
+     -0.1476517,
+     0.2614326,
+     -0.0206566
+    ],
+    "auto_configure_connected_anchor": true,
+    "axis": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "secondary_axis": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "motion_xyz": [
+     0,
+     0,
+     0
+    ],
+    "angular_motion_xyz": [
+     1,
+     1,
+     1
+    ],
+    "low_angular_x": -100.0,
+    "high_angular_x": 60.0,
+    "angular_y": 80.0,
+    "angular_z": 0.0,
+    "limit_bounciness": [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "angular_x_limit_spring": [
+     0.0,
+     0.0
+    ],
+    "angular_yz_limit_spring": [
+     0.0,
+     0.0
+    ],
+    "angular_x_drive_prefab": [
+     0.0,
+     0.0,
+     3.4028232635611926e+38
+    ],
+    "angular_yz_drive_prefab": [
+     0.0,
+     0.0,
+     3.4028232635611926e+38
+    ],
+    "slerp_drive_prefab_unused": [
+     0.0,
+     0.0
+    ],
+    "rotation_drive_mode": 0,
+    "target_rotation": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "target_angular_velocity": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "projection_mode": 1,
+    "projection_distance": 0.1,
+    "projection_angle": 180.0,
+    "configured_in_world_space": false,
+    "swap_bodies": false,
+    "enable_collision": false,
+    "enable_preprocessing": false,
+    "mass_scale": 1.0,
+    "connected_mass_scale": 1.0,
+    "break_force": Infinity,
+    "break_torque": Infinity,
+    "game_drive_rule": "in game X and YZ drives are both angular_x_drive_prefab * M (RigidbodyHolder.cs:109-120)"
+   },
+   "derived_geometry_GEO": {
+    "collider_com_rig_local_scaled": [
+     -0.0,
+     -0.0054,
+     0.1898
+    ],
+    "inertia_diag_base_kgm2_rig_axes": [
+     0.06982,
+     0.06982,
+     0.00878
+    ],
+    "inertia_principal_base_kgm2": [
+     0.00878,
+     0.06982,
+     0.06982
+    ],
+    "aabb_world_s1": [
+     [
+      -0.5542,
+      1.549,
+      -0.0804
+     ],
+     [
+      -0.1206,
+      1.67,
+      0.0406
+     ]
+    ],
+    "joint_anchor_world_s1": [
+     -0.1477,
+     1.6149,
+     -0.0199
+    ],
+    "joint_axis_world": [
+     -0.0,
+     1.0,
+     0.0
+    ],
+    "joint_secondary_world": [
+     -0.0,
+     1.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "name": "Elbow_Left",
+   "rigidbody_pid": 55411,
+   "layer": 0,
+   "allRigs_index": 4,
+   "base_mass_kg": 7.0,
+   "prefab_drag": 3.0,
+   "prefab_angular_drag": 3.0,
+   "use_gravity": true,
+   "interpolate": 0,
+   "constraints": 0,
+   "collision_detection": 0,
+   "local_pos_root_s1": [
+    -0.8828033,
+    1.6010742,
+    -0.0236244
+   ],
+   "local_rot_xyzw": [
+    4e-07,
+    -0.7071071,
+    1e-07,
+    0.7071066
+   ],
+   "local_scale": [
+    1.080001,
+    1.08,
+    1.080001
+   ],
+   "colliders": [
+    {
+     "kind": "CapsuleCollider",
+     "pid": 57775,
+     "child": "Collider",
+     "layer": 0,
+     "enabled": true,
+     "trigger": false,
+     "material": "BodyDefault",
+     "child_local_pos": [
+      -0.0,
+      -0.007,
+      -0.145
+     ],
+     "child_local_rot_xyzw": [
+      -0.6891152,
+      1e-07,
+      -0.0,
+      0.7246518
+     ],
+     "child_local_scale": [
+      0.1400543,
+      0.2215649,
+      0.1400543
+     ],
+     "center": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "center_rig_frame_scaled_s1": [
+      0.0,
+      -0.007560007,
+      -0.1566001
+     ],
+     "radius": 0.4,
+     "height": 2.0,
+     "direction": 1,
+     "radius_scaled_s1": 0.06050351,
+     "height_scaled_s1": 0.4785806,
+     "axis_rig_frame": [
+      -1.37823e-07,
+      0.05024048,
+      -0.9987371
+     ]
+    }
+   ],
+   "behaviours": [
+    {
+     "type": "CurveAnimation",
+     "pid": 69707,
+     "data": {
+      "animationData": "ptr(0,63267)",
+      "isRight": 0,
+      "invertLocalAxis": 1,
+      "uppHillHelp": 0.0,
+      "multiplier": 1.0
+     }
+    },
+    {
+     "type": "HandLeft",
+     "pid": 69776,
+     "data": {}
+    }
+   ],
+   "children": {
+    "ForcePoint": {
+     "type": "ForcePoint",
+     "local_pos": [
+      -0.0,
+      -0.023,
+      -0.021
+     ],
+     "local_rot_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "local_scale": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    }
+   },
+   "joint": {
+    "pid": 59377,
+    "connected_to": "Arm_Left",
+    "anchor": [
+     0.0,
+     0.0,
+     -0.34
+    ],
+    "connected_anchor": [
+     -0.003482,
+     -0.0128389,
+     0.340694
+    ],
+    "auto_configure_connected_anchor": true,
+    "axis": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "secondary_axis": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "motion_xyz": [
+     0,
+     0,
+     0
+    ],
+    "angular_motion_xyz": [
+     1,
+     1,
+     1
+    ],
+    "low_angular_x": -105.0,
+    "high_angular_x": 0.0,
+    "angular_y": 0.0,
+    "angular_z": 0.0,
+    "limit_bounciness": [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "angular_x_limit_spring": [
+     0.0,
+     0.0
+    ],
+    "angular_yz_limit_spring": [
+     0.0,
+     0.0
+    ],
+    "angular_x_drive_prefab": [
+     0.0,
+     0.0,
+     3.4028232635611926e+38
+    ],
+    "angular_yz_drive_prefab": [
+     0.0,
+     0.0,
+     3.4028232635611926e+38
+    ],
+    "slerp_drive_prefab_unused": [
+     0.0,
+     0.0
+    ],
+    "rotation_drive_mode": 0,
+    "target_rotation": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "target_angular_velocity": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "projection_mode": 1,
+    "projection_distance": 0.1,
+    "projection_angle": 180.0,
+    "configured_in_world_space": false,
+    "swap_bodies": false,
+    "enable_collision": false,
+    "enable_preprocessing": false,
+    "mass_scale": 1.0,
+    "connected_mass_scale": 1.0,
+    "break_force": Infinity,
+    "break_torque": Infinity,
+    "game_drive_rule": "in game X and YZ drives are both angular_x_drive_prefab * M (RigidbodyHolder.cs:109-120)"
+   },
+   "derived_geometry_GEO": {
+    "collider_com_rig_local_scaled": [
+     -0.0,
+     -0.0076,
+     -0.1566
+    ],
+    "inertia_diag_base_kgm2_rig_axes": [
+     0.11961,
+     0.11934,
+     0.01261
+    ],
+    "inertia_principal_base_kgm2": [
+     0.01234,
+     0.11961,
+     0.11961
+    ],
+    "aabb_world_s1": [
+     [
+      -0.9653,
+      1.524,
+      -0.0841
+     ],
+     [
+      -0.4871,
+      1.663,
+      0.0369
+     ]
+    ],
+    "joint_anchor_world_s1": [
+     -0.5156,
+     1.6011,
+     -0.0236
+    ],
+    "joint_axis_world": [
+     -0.0,
+     1.0,
+     0.0
+    ],
+    "joint_secondary_world": [
+     -0.0,
+     1.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "name": "Arm_Right",
+   "rigidbody_pid": 55416,
+   "layer": 0,
+   "allRigs_index": 5,
+   "base_mass_kg": 5.0,
+   "prefab_drag": 3.0,
+   "prefab_angular_drag": 3.0,
+   "use_gravity": true,
+   "interpolate": 0,
+   "constraints": 0,
+   "collision_detection": 0,
+   "local_pos_root_s1": [
+    0.1476517,
+    1.6149406,
+    -0.0198631
+   ],
+   "local_rot_xyzw": [
+    -1e-07,
+    0.7071066,
+    2e-07,
+    0.7071071
+   ],
+   "local_scale": [
+    1.0800023,
+    1.08,
+    1.0800023
+   ],
+   "colliders": [
+    {
+     "kind": "CapsuleCollider",
+     "pid": 57766,
+     "child": "Collider",
+     "layer": 0,
+     "enabled": true,
+     "trigger": false,
+     "material": "BodyDefault",
+     "child_local_pos": [
+      0.0,
+      -0.005,
+      0.1757
+     ],
+     "child_local_rot_xyzw": [
+      -0.7071066,
+      -0.0,
+      -1e-07,
+      0.7071071
+     ],
+     "child_local_scale": [
+      0.1400543,
+      0.20072,
+      0.1400543
+     ],
+     "center": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "center_rig_frame_scaled_s1": [
+      0.0,
+      -0.005400012,
+      0.1897564
+     ],
+     "radius": 0.4,
+     "height": 2.0,
+     "direction": 1,
+     "radius_scaled_s1": 0.06050359,
+     "height_scaled_s1": 0.4335561,
+     "axis_rig_frame": [
+      1.414214e-07,
+      5.124729e-07,
+      -1.0
+     ]
+    }
+   ],
+   "behaviours": [
+    {
+     "type": "CurveAnimation",
+     "pid": 69774,
+     "data": {
+      "animationData": "ptr(0,63266)",
+      "isRight": 1,
+      "invertLocalAxis": 0,
+      "uppHillHelp": 0.0,
+      "multiplier": 1.0
+     }
+    },
+    {
+     "type": "ArmRight",
+     "pid": 69759,
+     "data": {}
+    }
+   ],
+   "children": {},
+   "joint": {
+    "pid": 59378,
+    "connected_to": "Torso",
+    "anchor": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "connected_anchor": [
+     0.1476517,
+     0.2614326,
+     -0.0206566
+    ],
+    "auto_configure_connected_anchor": true,
+    "axis": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "secondary_axis": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "motion_xyz": [
+     0,
+     0,
+     0
+    ],
+    "angular_motion_xyz": [
+     1,
+     1,
+     1
+    ],
+    "low_angular_x": -60.0,
+    "high_angular_x": 100.0,
+    "angular_y": 80.0,
+    "angular_z": 0.0,
+    "limit_bounciness": [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "angular_x_limit_spring": [
+     0.0,
+     0.0
+    ],
+    "angular_yz_limit_spring": [
+     0.0,
+     0.0
+    ],
+    "angular_x_drive_prefab": [
+     0.0,
+     0.0,
+     3.4028232635611926e+38
+    ],
+    "angular_yz_drive_prefab": [
+     0.0,
+     0.0,
+     3.4028232635611926e+38
+    ],
+    "slerp_drive_prefab_unused": [
+     0.0,
+     0.0
+    ],
+    "rotation_drive_mode": 0,
+    "target_rotation": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "target_angular_velocity": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "projection_mode": 1,
+    "projection_distance": 0.1,
+    "projection_angle": 180.0,
+    "configured_in_world_space": false,
+    "swap_bodies": false,
+    "enable_collision": false,
+    "enable_preprocessing": false,
+    "mass_scale": 1.0,
+    "connected_mass_scale": 1.0,
+    "break_force": Infinity,
+    "break_torque": Infinity,
+    "game_drive_rule": "in game X and YZ drives are both angular_x_drive_prefab * M (RigidbodyHolder.cs:109-120)"
+   },
+   "derived_geometry_GEO": {
+    "collider_com_rig_local_scaled": [
+     -0.0,
+     -0.0054,
+     0.1898
+    ],
+    "inertia_diag_base_kgm2_rig_axes": [
+     0.06982,
+     0.06982,
+     0.00878
+    ],
+    "inertia_principal_base_kgm2": [
+     0.00878,
+     0.06982,
+     0.06982
+    ],
+    "aabb_world_s1": [
+     [
+      0.1206,
+      1.549,
+      -0.0804
+     ],
+     [
+      0.5542,
+      1.67,
+      0.0406
+     ]
+    ],
+    "joint_anchor_world_s1": [
+     0.1477,
+     1.6149,
+     -0.0199
+    ],
+    "joint_axis_world": [
+     -0.0,
+     1.0,
+     0.0
+    ],
+    "joint_secondary_world": [
+     -0.0,
+     1.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "name": "Elbow_Right",
+   "rigidbody_pid": 55417,
+   "layer": 0,
+   "allRigs_index": 6,
+   "base_mass_kg": 7.0,
+   "prefab_drag": 3.0,
+   "prefab_angular_drag": 3.0,
+   "use_gravity": true,
+   "interpolate": 0,
+   "constraints": 0,
+   "collision_detection": 0,
+   "local_pos_root_s1": [
+    0.8828033,
+    1.6010704,
+    -0.0161018
+   ],
+   "local_rot_xyzw": [
+    -1e-07,
+    0.7071065,
+    4e-07,
+    0.7071071
+   ],
+   "local_scale": [
+    1.08,
+    1.08,
+    1.08
+   ],
+   "colliders": [
+    {
+     "kind": "CapsuleCollider",
+     "pid": 57770,
+     "child": "Collider",
+     "layer": 0,
+     "enabled": true,
+     "trigger": false,
+     "material": "BodyDefault",
+     "child_local_pos": [
+      -0.0,
+      -0.007,
+      -0.145
+     ],
+     "child_local_rot_xyzw": [
+      -0.6891152,
+      1e-07,
+      -0.0,
+      0.7246518
+     ],
+     "child_local_scale": [
+      0.1400543,
+      0.2215649,
+      0.1400543
+     ],
+     "center": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "center_rig_frame_scaled_s1": [
+      0.0,
+      -0.00756,
+      -0.1566
+     ],
+     "radius": 0.4,
+     "height": 2.0,
+     "direction": 1,
+     "radius_scaled_s1": 0.06050346,
+     "height_scaled_s1": 0.4785802,
+     "axis_rig_frame": [
+      -1.37823e-07,
+      0.05024048,
+      -0.9987371
+     ]
+    }
+   ],
+   "behaviours": [
+    {
+     "type": "CurveAnimation",
+     "pid": 69730,
+     "data": {
+      "animationData": "ptr(0,63267)",
+      "isRight": 1,
+      "invertLocalAxis": 0,
+      "uppHillHelp": 0.0,
+      "multiplier": 1.0
+     }
+    },
+    {
+     "type": "HandRight",
+     "pid": 69785,
+     "data": {}
+    }
+   ],
+   "children": {
+    "ForcePoint": {
+     "type": "ForcePoint",
+     "local_pos": [
+      -0.0,
+      -0.023,
+      -0.021
+     ],
+     "local_rot_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "local_scale": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    }
+   },
+   "joint": {
+    "pid": 59381,
+    "connected_to": "Arm_Right",
+    "anchor": [
+     0.0,
+     0.0,
+     -0.34
+    ],
+    "connected_anchor": [
+     -0.0034822,
+     -0.0128432,
+     0.3406953
+    ],
+    "auto_configure_connected_anchor": true,
+    "axis": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "secondary_axis": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "motion_xyz": [
+     0,
+     0,
+     0
+    ],
+    "angular_motion_xyz": [
+     1,
+     1,
+     1
+    ],
+    "low_angular_x": 0.0,
+    "high_angular_x": 105.0,
+    "angular_y": 0.0,
+    "angular_z": 0.0,
+    "limit_bounciness": [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "angular_x_limit_spring": [
+     0.0,
+     0.0
+    ],
+    "angular_yz_limit_spring": [
+     0.0,
+     0.0
+    ],
+    "angular_x_drive_prefab": [
+     0.0,
+     0.0,
+     3.4028232635611926e+38
+    ],
+    "angular_yz_drive_prefab": [
+     0.0,
+     0.0,
+     3.4028232635611926e+38
+    ],
+    "slerp_drive_prefab_unused": [
+     0.0,
+     0.0
+    ],
+    "rotation_drive_mode": 0,
+    "target_rotation": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "target_angular_velocity": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "projection_mode": 1,
+    "projection_distance": 0.1,
+    "projection_angle": 180.0,
+    "configured_in_world_space": false,
+    "swap_bodies": false,
+    "enable_collision": false,
+    "enable_preprocessing": false,
+    "mass_scale": 1.0,
+    "connected_mass_scale": 1.0,
+    "break_force": Infinity,
+    "break_torque": Infinity,
+    "game_drive_rule": "in game X and YZ drives are both angular_x_drive_prefab * M (RigidbodyHolder.cs:109-120)"
+   },
+   "derived_geometry_GEO": {
+    "collider_com_rig_local_scaled": [
+     -0.0,
+     -0.0076,
+     -0.1566
+    ],
+    "inertia_diag_base_kgm2_rig_axes": [
+     0.11961,
+     0.11934,
+     0.01261
+    ],
+    "inertia_principal_base_kgm2": [
+     0.01234,
+     0.11961,
+     0.11961
+    ],
+    "aabb_world_s1": [
+     [
+      0.4871,
+      1.524,
+      -0.0766
+     ],
+     [
+      0.9653,
+      1.663,
+      0.0444
+     ]
+    ],
+    "joint_anchor_world_s1": [
+     0.5156,
+     1.6011,
+     -0.0161
+    ],
+    "joint_axis_world": [
+     -0.0,
+     1.0,
+     0.0
+    ],
+    "joint_secondary_world": [
+     -0.0,
+     1.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "name": "Leg_Left",
+   "rigidbody_pid": 55415,
+   "layer": 0,
+   "allRigs_index": 7,
+   "base_mass_kg": 12.0,
+   "prefab_drag": 3.0,
+   "prefab_angular_drag": 3.0,
+   "use_gravity": true,
+   "interpolate": 0,
+   "constraints": 0,
+   "collision_detection": 0,
+   "local_pos_root_s1": [
+    -0.0823898,
+    0.9940033,
+    -0.0174599
+   ],
+   "local_rot_xyzw": [
+    0.0,
+    -0.0,
+    -0.0871558,
+    0.9961947
+   ],
+   "local_scale": [
+    1.1023998,
+    1.1023998,
+    1.1023999
+   ],
+   "colliders": [
+    {
+     "kind": "CapsuleCollider",
+     "pid": 57769,
+     "child": "Collider",
+     "layer": 0,
+     "enabled": true,
+     "trigger": false,
+     "material": "Slippery",
+     "child_local_pos": [
+      0.0,
+      -0.2,
+      0.0
+     ],
+     "child_local_rot_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "child_local_scale": [
+      0.1400543,
+      0.2043741,
+      0.1400543
+     ],
+     "center": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "center_rig_frame_scaled_s1": [
+      0.0,
+      -0.22048,
+      0.0
+     ],
+     "radius": 0.5,
+     "height": 2.0,
+     "direction": 1,
+     "radius_scaled_s1": 0.07719792,
+     "height_scaled_s1": 0.4506039,
+     "axis_rig_frame": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "behaviours": [
+    {
+     "type": "LegLeft",
+     "pid": 69751,
+     "data": {}
+    },
+    {
+     "type": "CurveAnimation",
+     "pid": 69747,
+     "data": {
+      "animationData": "ptr(0,63269)",
+      "isRight": 0,
+      "invertLocalAxis": 0,
+      "uppHillHelp": 1.0,
+      "multiplier": 1.0
+     }
+    },
+    {
+     "type": "AnimationJoint",
+     "pid": 69728,
+     "data": {
+      "animationData": "ptr(0,63280)",
+      "defaultJoint": {
+       "name": "",
+       "ID": 0,
+       "useTwist": 0,
+       "lowTwist": 0.0,
+       "highTwist": 0.0,
+       "useAngularY": 0,
+       "angularY": 0.0,
+       "useAngularZ": 0,
+       "angularZ": 0.0
+      }
+     }
+    }
+   ],
+   "children": {
+    "CenterOfMass": {
+     "type": "CenterOfMass",
+     "local_pos": [
+      0.0,
+      -0.33,
+      0.0
+     ],
+     "local_rot_xyzw": [
+      -0.0,
+      -0.0,
+      -0.0,
+      1.0
+     ],
+     "local_scale": [
+      0.9807693,
+      0.9807693,
+      0.9807693
+     ]
+    }
+   },
+   "joint": {
+    "pid": 59375,
+    "connected_to": "Hip",
+    "anchor": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "connected_anchor": [
+     -0.0823898,
+     -0.0816708,
+     0.0298767
+    ],
+    "auto_configure_connected_anchor": true,
+    "axis": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "secondary_axis": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "motion_xyz": [
+     0,
+     0,
+     0
+    ],
+    "angular_motion_xyz": [
+     1,
+     1,
+     1
+    ],
+    "low_angular_x": -55.0,
+    "high_angular_x": 60.0,
+    "angular_y": 0.0,
+    "angular_z": 0.0,
+    "limit_bounciness": [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "angular_x_limit_spring": [
+     0.0,
+     0.0
+    ],
+    "angular_yz_limit_spring": [
+     0.0,
+     0.0
+    ],
+    "angular_x_drive_prefab": [
+     0.0,
+     0.0,
+     3.4028232635611926e+38
+    ],
+    "angular_yz_drive_prefab": [
+     0.0,
+     0.0,
+     3.4028232635611926e+38
+    ],
+    "slerp_drive_prefab_unused": [
+     0.0,
+     0.0
+    ],
+    "rotation_drive_mode": 0,
+    "target_rotation": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "target_angular_velocity": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "projection_mode": 1,
+    "projection_distance": 0.1,
+    "projection_angle": 180.0,
+    "configured_in_world_space": false,
+    "swap_bodies": false,
+    "enable_collision": false,
+    "enable_preprocessing": false,
+    "mass_scale": 1.0,
+    "connected_mass_scale": 1.0,
+    "break_force": Infinity,
+    "break_torque": Infinity,
+    "game_drive_rule": "in game X and YZ drives are both angular_x_drive_prefab * M (RigidbodyHolder.cs:109-120)"
+   },
+   "derived_geometry_GEO": {
+    "collider_com_rig_local_scaled": [
+     0.0,
+     -0.2205,
+     0.0
+    ],
+    "inertia_diag_base_kgm2_rig_axes": [
+     0.18017,
+     0.03391,
+     0.18017
+    ],
+    "inertia_principal_base_kgm2": [
+     0.03391,
+     0.18017,
+     0.18017
+    ],
+    "aabb_world_s1": [
+     [
+      -0.2236,
+      0.5538,
+      -0.0947
+     ],
+     [
+      -0.0178,
+      0.9999,
+      0.0597
+     ]
+    ],
+    "joint_anchor_world_s1": [
+     -0.0824,
+     0.994,
+     -0.0175
+    ],
+    "joint_axis_world": [
+     0.985,
+     -0.174,
+     0.0
+    ],
+    "joint_secondary_world": [
+     0.174,
+     0.985,
+     0.0
+    ]
+   }
+  },
+  {
+   "name": "Knee_Left",
+   "rigidbody_pid": 55414,
+   "layer": 0,
+   "allRigs_index": 8,
+   "base_mass_kg": 5.0,
+   "prefab_drag": 3.0,
+   "prefab_angular_drag": 3.0,
+   "use_gravity": true,
+   "interpolate": 0,
+   "constraints": 0,
+   "collision_detection": 0,
+   "local_pos_root_s1": [
+    -0.1602535,
+    0.5373154,
+    -0.0248871
+   ],
+   "local_rot_xyzw": [
+    0.0,
+    -0.0,
+    -0.0871558,
+    0.9961947
+   ],
+   "local_scale": [
+    1.0811999,
+    1.0811999,
+    1.0811999
+   ],
+   "colliders": [
+    {
+     "kind": "CapsuleCollider",
+     "pid": 57768,
+     "child": "FootCollider",
+     "layer": 0,
+     "enabled": true,
+     "trigger": false,
+     "material": "Slippery",
+     "child_local_pos": [
+      -0.0,
+      -0.435,
+      0.036
+     ],
+     "child_local_rot_xyzw": [
+      0.7071068,
+      -0.0,
+      -0.0,
+      0.7071068
+     ],
+     "child_local_scale": [
+      0.0942271,
+      0.0786293,
+      0.0942271
+     ],
+     "center": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "center_rig_frame_scaled_s1": [
+      0.0,
+      -0.470322,
+      0.0389232
+     ],
+     "radius": 0.5,
+     "height": 2.0,
+     "direction": 1,
+     "radius_scaled_s1": 0.05093917,
+     "height_scaled_s1": 0.170028,
+     "axis_rig_frame": [
+      0.0,
+      -5.321248e-08,
+      1.0
+     ]
+    },
+    {
+     "kind": "CapsuleCollider",
+     "pid": 57772,
+     "child": "Collider",
+     "layer": 0,
+     "enabled": true,
+     "trigger": false,
+     "material": "Slippery",
+     "child_local_pos": [
+      0.0,
+      -0.2,
+      0.0
+     ],
+     "child_local_rot_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "child_local_scale": [
+      0.1400543,
+      0.2389951,
+      0.1400543
+     ],
+     "center": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "center_rig_frame_scaled_s1": [
+      0.0,
+      -0.21624,
+      0.0
+     ],
+     "radius": 0.38,
+     "height": 2.0,
+     "direction": 1,
+     "radius_scaled_s1": 0.05754214,
+     "height_scaled_s1": 0.516803,
+     "axis_rig_frame": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "behaviours": [
+    {
+     "type": "GroundChecker",
+     "pid": 69765,
+     "data": {
+      "isActive": 1,
+      "sinceGrounded": 0.0,
+      "groundPos": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "reportToDataHandler": 1,
+      "footDownEvent": {
+       "m_PersistentCalls": {
+        "m_Calls": []
+       }
+      },
+      "ignoreRigidbodies": 0
+     }
+    },
+    {
+     "type": "KneeLeft",
+     "pid": 69756,
+     "data": {}
+    },
+    {
+     "type": "AnimationJoint",
+     "pid": 69766,
+     "data": {
+      "animationData": "ptr(0,63279)",
+      "defaultJoint": {
+       "name": "",
+       "ID": 0,
+       "useTwist": 0,
+       "lowTwist": 0.0,
+       "highTwist": 0.0,
+       "useAngularY": 0,
+       "angularY": 0.0,
+       "useAngularZ": 0,
+       "angularZ": 0.0
+      }
+     }
+    },
+    {
+     "type": "CurveAnimation",
+     "pid": 69762,
+     "data": {
+      "animationData": "ptr(0,63268)",
+      "isRight": 0,
+      "invertLocalAxis": 0,
+      "uppHillHelp": 0.0,
+      "multiplier": 1.0
+     }
+    },
+    {
+     "type": "FootSupport",
+     "pid": 69723,
+     "data": {
+      "isRight": 0,
+      "slippery": "ptr(0,7530)",
+      "foot": "ptr(0,7525)",
+      "extraSupportTime": 0.1,
+      "extraNoSupportTime": 0.0
+     }
+    }
+   ],
+   "children": {
+    "ForcePoint": {
+     "type": "ForcePoint",
+     "local_pos": [
+      0.0,
+      -0.475,
+      0.0
+     ],
+     "local_rot_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "local_scale": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    "CenterOfMass": {
+     "type": "CenterOfMass",
+     "local_pos": [
+      0.0,
+      -0.409,
+      0.0
+     ],
+     "local_rot_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "local_scale": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    }
+   },
+   "joint": {
+    "pid": 59374,
+    "connected_to": "Leg_Left",
+    "anchor": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "connected_anchor": [
+     0.0023787,
+     -0.4202384,
+     -0.0067373
+    ],
+    "auto_configure_connected_anchor": true,
+    "axis": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "secondary_axis": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "motion_xyz": [
+     0,
+     0,
+     0
+    ],
+    "angular_motion_xyz": [
+     1,
+     1,
+     1
+    ],
+    "low_angular_x": -80.0,
+    "high_angular_x": -5.0,
+    "angular_y": 0.0,
+    "angular_z": 0.0,
+    "limit_bounciness": [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "angular_x_limit_spring": [
+     0.0,
+     0.0
+    ],
+    "angular_yz_limit_spring": [
+     0.0,
+     0.0
+    ],
+    "angular_x_drive_prefab": [
+     4.0,
+     1.0,
+     3.4028232635611926e+38
+    ],
+    "angular_yz_drive_prefab": [
+     4.0,
+     1.0,
+     3.4028232635611926e+38
+    ],
+    "slerp_drive_prefab_unused": [
+     0.0,
+     0.0
+    ],
+    "rotation_drive_mode": 0,
+    "target_rotation": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "target_angular_velocity": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "projection_mode": 1,
+    "projection_distance": 0.1,
+    "projection_angle": 180.0,
+    "configured_in_world_space": false,
+    "swap_bodies": false,
+    "enable_collision": false,
+    "enable_preprocessing": false,
+    "mass_scale": 1.0,
+    "connected_mass_scale": 1.0,
+    "break_force": Infinity,
+    "break_torque": Infinity,
+    "game_drive_rule": "in game X and YZ drives are both angular_x_drive_prefab * M (RigidbodyHolder.cs:109-120)"
+   },
+   "derived_geometry_GEO": {
+    "collider_com_rig_local_scaled": [
+     0.0,
+     -0.2625,
+     0.0071
+    ],
+    "inertia_diag_base_kgm2_rig_axes": [
+     0.13332,
+     0.00975,
+     0.13119
+    ],
+    "inertia_principal_base_kgm2": [
+     0.0093,
+     0.13163,
+     0.13332
+    ],
+    "aabb_world_s1": [
+     [
+      -0.2929,
+      0.0232,
+      -0.0824
+     ],
+     [
+      -0.1054,
+      0.5797,
+      0.0991
+     ]
+    ],
+    "joint_anchor_world_s1": [
+     -0.1603,
+     0.5373,
+     -0.0249
+    ],
+    "joint_axis_world": [
+     0.985,
+     -0.174,
+     0.0
+    ],
+    "joint_secondary_world": [
+     0.174,
+     0.985,
+     0.0
+    ]
+   }
+  },
+  {
+   "name": "Leg_Right",
+   "rigidbody_pid": 55413,
+   "layer": 0,
+   "allRigs_index": 9,
+   "base_mass_kg": 12.0,
+   "prefab_drag": 3.0,
+   "prefab_angular_drag": 3.0,
+   "use_gravity": true,
+   "interpolate": 0,
+   "constraints": 0,
+   "collision_detection": 0,
+   "local_pos_root_s1": [
+    0.0823898,
+    0.9940033,
+    -0.0174599
+   ],
+   "local_rot_xyzw": [
+    -0.0,
+    -0.0,
+    0.0871558,
+    0.9961947
+   ],
+   "local_scale": [
+    1.1023998,
+    1.1023998,
+    1.1023999
+   ],
+   "colliders": [
+    {
+     "kind": "CapsuleCollider",
+     "pid": 57774,
+     "child": "Collider",
+     "layer": 0,
+     "enabled": true,
+     "trigger": false,
+     "material": "Slippery",
+     "child_local_pos": [
+      0.0,
+      -0.2,
+      0.0
+     ],
+     "child_local_rot_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "child_local_scale": [
+      0.1400543,
+      0.2043741,
+      0.1400543
+     ],
+     "center": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "center_rig_frame_scaled_s1": [
+      0.0,
+      -0.22048,
+      0.0
+     ],
+     "radius": 0.5,
+     "height": 2.0,
+     "direction": 1,
+     "radius_scaled_s1": 0.07719792,
+     "height_scaled_s1": 0.4506039,
+     "axis_rig_frame": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "behaviours": [
+    {
+     "type": "LegRight",
+     "pid": 69739,
+     "data": {}
+    },
+    {
+     "type": "CurveAnimation",
+     "pid": 69735,
+     "data": {
+      "animationData": "ptr(0,63269)",
+      "isRight": 1,
+      "invertLocalAxis": 0,
+      "uppHillHelp": 1.0,
+      "multiplier": 1.0
+     }
+    },
+    {
+     "type": "AnimationJoint",
+     "pid": 69712,
+     "data": {
+      "animationData": "ptr(0,63280)",
+      "defaultJoint": {
+       "name": "",
+       "ID": 0,
+       "useTwist": 0,
+       "lowTwist": 0.0,
+       "highTwist": 0.0,
+       "useAngularY": 0,
+       "angularY": 0.0,
+       "useAngularZ": 0,
+       "angularZ": 0.0
+      }
+     }
+    }
+   ],
+   "children": {
+    "CenterOfMass": {
+     "type": "CenterOfMass",
+     "local_pos": [
+      0.0,
+      -0.33,
+      0.0
+     ],
+     "local_rot_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "local_scale": [
+      0.9807693,
+      0.9807693,
+      0.9807693
+     ]
+    }
+   },
+   "joint": {
+    "pid": 59379,
+    "connected_to": "Hip",
+    "anchor": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "connected_anchor": [
+     0.0823898,
+     -0.0816708,
+     0.0298767
+    ],
+    "auto_configure_connected_anchor": true,
+    "axis": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "secondary_axis": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "motion_xyz": [
+     0,
+     0,
+     0
+    ],
+    "angular_motion_xyz": [
+     1,
+     1,
+     1
+    ],
+    "low_angular_x": -55.0,
+    "high_angular_x": 60.0,
+    "angular_y": 0.0,
+    "angular_z": 0.0,
+    "limit_bounciness": [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "angular_x_limit_spring": [
+     0.0,
+     0.0
+    ],
+    "angular_yz_limit_spring": [
+     0.0,
+     0.0
+    ],
+    "angular_x_drive_prefab": [
+     0.0,
+     0.0,
+     3.4028232635611926e+38
+    ],
+    "angular_yz_drive_prefab": [
+     0.0,
+     0.0,
+     3.4028232635611926e+38
+    ],
+    "slerp_drive_prefab_unused": [
+     0.0,
+     0.0
+    ],
+    "rotation_drive_mode": 0,
+    "target_rotation": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "target_angular_velocity": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "projection_mode": 1,
+    "projection_distance": 0.1,
+    "projection_angle": 180.0,
+    "configured_in_world_space": false,
+    "swap_bodies": false,
+    "enable_collision": false,
+    "enable_preprocessing": false,
+    "mass_scale": 1.0,
+    "connected_mass_scale": 1.0,
+    "break_force": Infinity,
+    "break_torque": Infinity,
+    "game_drive_rule": "in game X and YZ drives are both angular_x_drive_prefab * M (RigidbodyHolder.cs:109-120)"
+   },
+   "derived_geometry_GEO": {
+    "collider_com_rig_local_scaled": [
+     -0.0,
+     -0.2205,
+     0.0
+    ],
+    "inertia_diag_base_kgm2_rig_axes": [
+     0.18017,
+     0.03391,
+     0.18017
+    ],
+    "inertia_principal_base_kgm2": [
+     0.03391,
+     0.18017,
+     0.18017
+    ],
+    "aabb_world_s1": [
+     [
+      0.0178,
+      0.5538,
+      -0.0947
+     ],
+     [
+      0.2236,
+      0.9999,
+      0.0597
+     ]
+    ],
+    "joint_anchor_world_s1": [
+     0.0824,
+     0.994,
+     -0.0175
+    ],
+    "joint_axis_world": [
+     0.985,
+     0.174,
+     0.0
+    ],
+    "joint_secondary_world": [
+     -0.174,
+     0.985,
+     0.0
+    ]
+   }
+  },
+  {
+   "name": "Knee_Right",
+   "rigidbody_pid": 55407,
+   "layer": 0,
+   "allRigs_index": 10,
+   "base_mass_kg": 5.0,
+   "prefab_drag": 3.0,
+   "prefab_angular_drag": 3.0,
+   "use_gravity": true,
+   "interpolate": 0,
+   "constraints": 0,
+   "collision_detection": 0,
+   "local_pos_root_s1": [
+    0.1602535,
+    0.5373173,
+    -0.0248909
+   ],
+   "local_rot_xyzw": [
+    -0.0,
+    -0.0,
+    0.0871558,
+    0.9961947
+   ],
+   "local_scale": [
+    1.0811999,
+    1.0811999,
+    1.0811999
+   ],
+   "colliders": [
+    {
+     "kind": "CapsuleCollider",
+     "pid": 57776,
+     "child": "FootCollider",
+     "layer": 0,
+     "enabled": true,
+     "trigger": false,
+     "material": "Slippery",
+     "child_local_pos": [
+      0.0,
+      -0.435,
+      0.036
+     ],
+     "child_local_rot_xyzw": [
+      0.7071068,
+      -0.0,
+      -0.0,
+      0.7071068
+     ],
+     "child_local_scale": [
+      0.0942271,
+      0.0786293,
+      0.0942271
+     ],
+     "center": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "center_rig_frame_scaled_s1": [
+      0.0,
+      -0.470322,
+      0.0389232
+     ],
+     "radius": 0.5,
+     "height": 2.0,
+     "direction": 1,
+     "radius_scaled_s1": 0.05093917,
+     "height_scaled_s1": 0.170028,
+     "axis_rig_frame": [
+      0.0,
+      -5.321248e-08,
+      1.0
+     ]
+    },
+    {
+     "kind": "CapsuleCollider",
+     "pid": 57767,
+     "child": "Collider",
+     "layer": 0,
+     "enabled": true,
+     "trigger": false,
+     "material": "Slippery",
+     "child_local_pos": [
+      0.0,
+      -0.2,
+      -0.0
+     ],
+     "child_local_rot_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "child_local_scale": [
+      0.1400543,
+      0.2389951,
+      0.1400543
+     ],
+     "center": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "center_rig_frame_scaled_s1": [
+      0.0,
+      -0.21624,
+      0.0
+     ],
+     "radius": 0.38,
+     "height": 2.0,
+     "direction": 1,
+     "radius_scaled_s1": 0.05754214,
+     "height_scaled_s1": 0.516803,
+     "axis_rig_frame": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "behaviours": [
+    {
+     "type": "GroundChecker",
+     "pid": 69731,
+     "data": {
+      "isActive": 1,
+      "sinceGrounded": 0.0,
+      "groundPos": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "reportToDataHandler": 1,
+      "footDownEvent": {
+       "m_PersistentCalls": {
+        "m_Calls": []
+       }
+      },
+      "ignoreRigidbodies": 0
+     }
+    },
+    {
+     "type": "KneeRight",
+     "pid": 69715,
+     "data": {}
+    },
+    {
+     "type": "AnimationJoint",
+     "pid": 69780,
+     "data": {
+      "animationData": "ptr(0,63279)",
+      "defaultJoint": {
+       "name": "",
+       "ID": 0,
+       "useTwist": 0,
+       "lowTwist": 0.0,
+       "highTwist": 0.0,
+       "useAngularY": 0,
+       "angularY": 0.0,
+       "useAngularZ": 0,
+       "angularZ": 0.0
+      }
+     }
+    },
+    {
+     "type": "CurveAnimation",
+     "pid": 69722,
+     "data": {
+      "animationData": "ptr(0,63268)",
+      "isRight": 1,
+      "invertLocalAxis": 0,
+      "uppHillHelp": 0.0,
+      "multiplier": 1.0
+     }
+    },
+    {
+     "type": "FootSupport",
+     "pid": 69763,
+     "data": {
+      "isRight": 1,
+      "slippery": "ptr(0,7530)",
+      "foot": "ptr(0,7525)",
+      "extraSupportTime": 0.1,
+      "extraNoSupportTime": 0.0
+     }
+    }
+   ],
+   "children": {
+    "ForcePoint": {
+     "type": "ForcePoint",
+     "local_pos": [
+      0.0,
+      -0.475,
+      -0.0
+     ],
+     "local_rot_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "local_scale": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    "CenterOfMass": {
+     "type": "CenterOfMass",
+     "local_pos": [
+      -0.0,
+      -0.409,
+      -0.0
+     ],
+     "local_rot_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "local_scale": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    }
+   },
+   "joint": {
+    "pid": 59373,
+    "connected_to": "Leg_Right",
+    "anchor": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "connected_anchor": [
+     -0.0023784,
+     -0.4202367,
+     -0.0067408
+    ],
+    "auto_configure_connected_anchor": true,
+    "axis": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "secondary_axis": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "motion_xyz": [
+     0,
+     0,
+     0
+    ],
+    "angular_motion_xyz": [
+     1,
+     1,
+     1
+    ],
+    "low_angular_x": -80.0,
+    "high_angular_x": -5.0,
+    "angular_y": 0.0,
+    "angular_z": 0.0,
+    "limit_bounciness": [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "angular_x_limit_spring": [
+     0.0,
+     0.0
+    ],
+    "angular_yz_limit_spring": [
+     0.0,
+     0.0
+    ],
+    "angular_x_drive_prefab": [
+     4.0,
+     1.0,
+     3.4028232635611926e+38
+    ],
+    "angular_yz_drive_prefab": [
+     4.0,
+     1.0,
+     3.4028232635611926e+38
+    ],
+    "slerp_drive_prefab_unused": [
+     0.0,
+     0.0
+    ],
+    "rotation_drive_mode": 0,
+    "target_rotation": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "target_angular_velocity": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "projection_mode": 1,
+    "projection_distance": 0.1,
+    "projection_angle": 180.0,
+    "configured_in_world_space": false,
+    "swap_bodies": false,
+    "enable_collision": false,
+    "enable_preprocessing": false,
+    "mass_scale": 1.0,
+    "connected_mass_scale": 1.0,
+    "break_force": Infinity,
+    "break_torque": Infinity,
+    "game_drive_rule": "in game X and YZ drives are both angular_x_drive_prefab * M (RigidbodyHolder.cs:109-120)"
+   },
+   "derived_geometry_GEO": {
+    "collider_com_rig_local_scaled": [
+     -0.0,
+     -0.2625,
+     0.0071
+    ],
+    "inertia_diag_base_kgm2_rig_axes": [
+     0.13332,
+     0.00975,
+     0.13119
+    ],
+    "inertia_principal_base_kgm2": [
+     0.0093,
+     0.13163,
+     0.13332
+    ],
+    "aabb_world_s1": [
+     [
+      0.1054,
+      0.0232,
+      -0.0824
+     ],
+     [
+      0.2929,
+      0.5797,
+      0.099
+     ]
+    ],
+    "joint_anchor_world_s1": [
+     0.1603,
+     0.5373,
+     -0.0249
+    ],
+    "joint_axis_world": [
+     0.985,
+     0.174,
+     0.0
+    ],
+    "joint_secondary_world": [
+     -0.174,
+     0.985,
+     0.0
+    ]
+   }
+  }
+ ],
+ "raw_unit_behaviours": {
+  "Unit": {
+   "pid": 69710,
+   "on": "Humanoid_1 Prefabs_VB",
+   "data": {
+    "m_entity": {
+     "m_name": "UNITBASE_HUMANOID",
+     "m_spriteIcon": "ptr(0,0)",
+     "m_spriteIconPath": "",
+     "m_guid": {
+      "m_modID": -1,
+      "m_ID": 1760500345
+     },
+     "m_unlockKey": ""
+    },
+    "m_rigType": 1,
+    "unitType": 0,
+    "Team": 1,
+    "unitBlueprint": "ptr(0,0)",
+    "targetYourFriends": 0,
+    "spawnedObjects": [],
+    "data": "ptr(0,69784)",
+    "Hip": "ptr(0,37297)",
+    "Head": "ptr(0,0)",
+    "Input": "ptr(0,69711)",
+    "WeaponHandler": "ptr(0,69761)",
+    "m_placementSquare": {
+     "DebugDraw": 1,
+     "m_offset": {
+      "x": 0.0,
+      "y": 1.0,
+      "z": 0.0
+     },
+     "m_size": {
+      "x": 1.0,
+      "y": 2.0,
+      "z": 1.0
+     }
+    },
+    "m_placementMesh": "ptr(0,0)",
+    "costMultiplier": 1.0,
+    "thickness": 0.0,
+    "m_PreferedDistance": 2.0,
+    "m_AttackDistance": 1.5,
+    "m_inRangeAttackCooldown": 0.0,
+    "dead": 0,
+    "fleesWithinThisManyMeters": 0.0,
+    "targetingPriorityMultiplier": 1.0,
+    "hasBeeninRange": 0,
+    "attackCounter": 0.0,
+    "lowestAttackTimeOfWeapons": 2.0,
+    "turnSpeedMultiplier": 1.0,
+    "turnSpeed": 18.0,
+    "holdingHandler": "ptr(0,69738)",
+    "neverStopRunning": 0,
+    "wasPlaced": 0,
+    "unitConfusion": {
+     "x": 0.0,
+     "y": 0.0,
+     "z": 0.0
+    },
+    "isUnitCopy": 0,
+    "api": "ptr(0,0)",
+    "attackAnimator": [],
+    "attackSpeedMultiplier": 1.0,
+    "level": 1,
+    "damageDealt": 0.0
+   }
+  },
+  "Cost": {
+   "pid": 69726,
+   "on": "Humanoid_1 Prefabs_VB",
+   "data": {
+    "m_cost": 10
+   }
+  },
+  "UnitRig": {
+   "pid": 69724,
+   "on": "Humanoid_1 Prefabs_VB",
+   "data": {
+    "m_head": "ptr(0,37351)",
+    "m_neck": "ptr(0,37359)",
+    "m_shoulderLeft": "ptr(0,37287)",
+    "m_shoulderRight": "ptr(0,37342)",
+    "m_armLeft": "ptr(0,37287)",
+    "m_armRight": "ptr(0,37342)",
+    "m_wristLeft": "ptr(0,37281)",
+    "m_wristRight": "ptr(0,37229)",
+    "m_torso": "ptr(0,37298)",
+    "m_waist": "ptr(0,37333)",
+    "m_legLeft": "ptr(0,37317)",
+    "m_legRight": "ptr(0,37237)",
+    "m_footLeft": "ptr(0,37358)",
+    "m_footRight": "ptr(0,37334)",
+    "m_numHideEyes": 0
+   }
+  },
+  "UnitAPI": {
+   "pid": 69748,
+   "on": "Humanoid_1 Prefabs_VB",
+   "data": {
+    "forceSupressFromWinCondition": 0,
+    "m_raycastMask": {
+     "m_Bits": 1916797440
+    }
+   }
+  },
+  "LodGroupMerger": {
+   "pid": 69456,
+   "on": "Humanoid_1 Prefabs_VB",
+   "data": {
+    "masterLodGroup": "ptr(0,62335)"
+   }
+  },
+  "Outline": {
+   "pid": 65752,
+   "on": "Humanoid_1 Prefabs_VB",
+   "data": {
+    "outlineMode": 0,
+    "outlineColor": {
+     "r": 1.0,
+     "g": 1.0,
+     "b": 1.0,
+     "a": 1.0
+    },
+    "outlineWidth": 1.0,
+    "precomputeOutline": 0,
+    "bakeKeys": [],
+    "bakeValues": []
+   }
+  },
+  "StepHandler": {
+   "pid": 69717,
+   "on": "Rigidbodies",
+   "data": {
+    "multiplier": 1.0,
+    "stepData": "ptr(0,63292)"
+   }
+  },
+  "DataHandler": {
+   "pid": 69784,
+   "on": "Rigidbodies",
+   "data": {
+    "lookDirectionIntent": {
+     "x": 0.0,
+     "y": 0.0,
+     "z": 0.0
+    },
+    "currentVelocity": {
+     "x": 0.0,
+     "y": 0.0,
+     "z": 0.0
+    },
+    "characterForwardObject": "ptr(0,37320)",
+    "unitToInheritDirectionFrom": "ptr(0,0)",
+    "groundedMovementDirectionObject": "ptr(0,37341)",
+    "playingStaticAnim": 0,
+    "extraGroundedTime": 0.0,
+    "isGrounded": 0,
+    "sinceGrounded": 0.0,
+    "distanceToGround": 0.0,
+    "sinceSwitchedStep": 0.0,
+    "currentLowSwitchCap": 0.1,
+    "fallTime": 0.0,
+    "immunityForSeconds": 0.0,
+    "muscleControl": 1.0,
+    "ragdollControl": 1.0,
+    "health": 100.0,
+    "maxHealth": 100.0,
+    "upHillVector": {
+     "x": 0.0,
+     "y": 0.0,
+     "z": 0.0
+    },
+    "groundNormal": {
+     "x": 0.0,
+     "y": 0.0,
+     "z": 0.0
+    },
+    "centerOfMass": {
+     "x": 0.0,
+     "y": 0.0,
+     "z": 0.0
+    },
+    "centerOfMassWithoutY": {
+     "x": 0.0,
+     "y": 0.0,
+     "z": 0.0
+    },
+    "forwardGroundNormal": {
+     "x": 0.0,
+     "y": 0.0,
+     "z": 0.0
+    },
+    "groundPosition": {
+     "x": 0.0,
+     "y": 0.0,
+     "z": 0.0
+    },
+    "groundMapPosition": {
+     "x": 0.0,
+     "y": 0.0,
+     "z": 0.0
+    },
+    "legAngle": 0.0,
+    "torsoAngleMultiplier": 1.0,
+    "lifeTime": 1.0,
+    "torsoAngleCurve": {
+     "m_Curve": [
+      {
+       "time": 40.0,
+       "value": 1.0,
+       "inSlope": 0.0,
+       "outSlope": 0.0,
+       "weightedMode": 0,
+       "inWeight": 0.3333333,
+       "outWeight": 0.3333333
+      },
+      {
+       "time": 90.0,
+       "value": 0.5,
+       "inSlope": -0.0015338,
+       "outSlope": -0.0015338,
+       "weightedMode": 0,
+       "inWeight": 0.1122354,
+       "outWeight": 0.3333333
+      }
+     ],
+     "m_PreInfinity": 2,
+     "m_PostInfinity": 2,
+     "m_RotationOrder": 4
+    },
+    "isRight": 1,
+    "takeFallDamage": 1,
+    "canFall": 1,
+    "cantFallForSeconds": 0.0,
+    "backwardsMultiplier": 1,
+    "angleToTarget": 0.0,
+    "allRigs": "ptr(0,69733)",
+    "team": 0,
+    "baseHeight": 1.0,
+    "groundedThisFrame": 0,
+    "torso": "ptr(0,37300)",
+    "mainRig": "ptr(0,55412)",
+    "head": "ptr(0,37357)",
+    "legLeft": "ptr(0,37318)",
+    "legRight": "ptr(0,37316)",
+    "footLeft": "ptr(0,37371)",
+    "footRight": "ptr(0,37322)",
+    "leftHand": "ptr(0,37373)",
+    "rightHand": "ptr(0,37301)",
+    "leftArm": "ptr(0,37253)",
+    "rightArm": "ptr(0,37366)",
+    "hip": "ptr(0,55409)",
+    "input": "ptr(0,0)",
+    "distanceToTarget": 0.0,
+    "inRange": 0,
+    "targetMainRig": "ptr(0,0)",
+    "targetData": "ptr(0,0)",
+    "hasBeenRevived": 0,
+    "healthHandler": "ptr(0,69755)",
+    "weaponHandler": "ptr(0,0)",
+    "unit": "ptr(0,0)",
+    "setMainRigKinematic": 0,
+    "lastPos": {
+     "x": 0.0,
+     "y": 0.0,
+     "z": 0.0
+    }
+   }
+  },
+  "SetGlobalJointSettings": {
+   "pid": 69709,
+   "on": "Rigidbodies",
+   "data": {
+    "allJoints": [],
+    "linearSpring": 10000.0,
+    "linearDamper": 50.0,
+    "limit": 0.0,
+    "linearDriveSpring": 20000.0,
+    "linearDriveDamper": 100.0,
+    "angularSpring": 0.0,
+    "angularDamper": 0.0,
+    "maxAngular": 500.0
+   }
+  },
+  "RigidbodyHolder": {
+   "pid": 69733,
+   "on": "Rigidbodies",
+   "data": {
+    "forceInterpolation": 0,
+    "dragMultiplier": 1.0,
+    "setKinematic": 0,
+    "randomizeRigidbodySizes": 1,
+    "frictionMaterial": "ptr(0,0)",
+    "massMultiplier": 1.0,
+    "defaultDrags": [],
+    "data": "ptr(0,69784)"
+   }
+  },
+  "StandingHandler": {
+   "pid": 69721,
+   "on": "Rigidbodies",
+   "data": {
+    "selfOffset": 0.0,
+    "standingData": "ptr(0,63288)",
+    "rigsToLift": [
+     {
+      "rig": "ptr(0,55410)",
+      "multiplier": 0.3
+     },
+     {
+      "rig": "ptr(0,55412)",
+      "multiplier": 1.0
+     }
+    ],
+    "torsoVelocityMultiplierCurve": {
+     "m_Curve": [
+      {
+       "time": 0.0,
+       "value": 1.0,
+       "inSlope": 0.0,
+       "outSlope": 0.0,
+       "weightedMode": 0,
+       "inWeight": 0.0,
+       "outWeight": 0.0
+      },
+      {
+       "time": 25.0,
+       "value": 0.0,
+       "inSlope": 0.0,
+       "outSlope": 0.0,
+       "weightedMode": 0,
+       "inWeight": 0.0,
+       "outWeight": 0.0
+      }
+     ],
+     "m_PreInfinity": 2,
+     "m_PostInfinity": 2,
+     "m_RotationOrder": 4
+    }
+   }
+  },
+  "GravityHandler": {
+   "pid": 69719,
+   "on": "Rigidbodies",
+   "data": {
+    "gravityData": "ptr(0,63273)"
+   }
+  },
+  "Balance": {
+   "pid": 69749,
+   "on": "Rigidbodies",
+   "data": {
+    "forceMultiplier": 1.0,
+    "balanceData": "ptr(0,63264)",
+    "allowedLegAngle": 130.0,
+    "allowedTorsoAngle": 120.0,
+    "allowedFootDistance": 1.2
+   }
+  },
+  "GeneralInput": {
+   "pid": 69711,
+   "on": "Rigidbodies",
+   "data": {
+    "hasControl": 0,
+    "inputDirection": {
+     "x": 0.0,
+     "y": 0.0,
+     "z": 0.0
+    },
+    "shift": 0,
+    "AllowRotationChange": 1,
+    "Direction": "ptr(0,37320)"
+   }
+  },
+  "MovementHandler": {
+   "pid": 69778,
+   "on": "Rigidbodies",
+   "data": {
+    "movementData": "ptr(0,63283)",
+    "otherHolders": [],
+    "data": "ptr(0,0)",
+    "multiplier": 1.0,
+    "cowardMultiplier": 1.0,
+    "stopForTurns": 1,
+    "lerpSpeed": 10.0,
+    "rigsWithMultiplier": [],
+    "removeUpwardsHelp": 1,
+    "forwardTohelperForwardLerp": 1.0
+   }
+  },
+  "RotationHandler": {
+   "pid": 69781,
+   "on": "Rigidbodies",
+   "data": {
+    "rotationForce": 25.0,
+    "ignoreY": 0,
+    "lockYToZero": 0,
+    "rotateTowardsMovement": 0,
+    "rotationMultiplier": 1.0
+   }
+  },
+  "SetAnimationByInput": {
+   "pid": 69771,
+   "on": "Rigidbodies",
+   "data": {}
+  },
+  "HoldingHandler": {
+   "pid": 69738,
+   "on": "Rigidbodies",
+   "data": {
+    "rightObject": "ptr(0,0)",
+    "leftObject": "ptr(0,0)",
+    "rightHandActivity": 0,
+    "leftHandActivity": 0,
+    "simpleAttach": 0
+   }
+  },
+  "DragHandler": {
+   "pid": 69742,
+   "on": "Rigidbodies",
+   "data": {}
+  },
+  "HealthHandler": {
+   "pid": 69755,
+   "on": "Rigidbodies",
+   "data": {
+    "deathEvent": {
+     "m_PersistentCalls": {
+      "m_Calls": []
+     }
+    },
+    "willBeRewived": 0
+   }
+  },
+  "WeaponHandler": {
+   "pid": 69761,
+   "on": "Rigidbodies",
+   "data": {
+    "rightWeapon": "ptr(0,0)",
+    "leftWeapon": "ptr(0,0)",
+    "fistRefernce": "ptr(0,12113)",
+    "deathEvent": {
+     "m_PersistentCalls": {
+      "m_Calls": []
+     }
+    },
+    "forceUnitAttackDistance": 0,
+    "attackSpeedMultiplier": 1.0
+   }
+  },
+  "PoseHandler": {
+   "pid": 69713,
+   "on": "Rigidbodies",
+   "data": {
+    "rideAnim": {
+     "animationName": "PoseRide",
+     "startMountAnimationDelay": 0.0,
+     "time": 0.2,
+     "startDelay": 0.0,
+     "followPosition": 1,
+     "followRotaiton": 1,
+     "animateHead": 0,
+     "animateTorso": 0,
+     "animateHip": 0,
+     "animateLeftArm": 0,
+     "animateLefftHand": 0,
+     "animateRightArm": 0,
+     "animateRightHand": 0,
+     "animateLeftLeg": 1,
+     "animateLeftKnee": 1,
+     "animateRightLeg": 1,
+     "animateRightKnee": 1
+    },
+    "poseTarget": "ptr(0,10325)",
+    "rigPoseFollowers": [
+     {
+      "rig": "ptr(0,0)",
+      "target": "ptr(0,0)",
+      "velocity": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "torque": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "currentPosition": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "currentRotation": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "currentRotationUp": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "isUsed": 0
+     },
+     {
+      "rig": "ptr(0,0)",
+      "target": "ptr(0,0)",
+      "velocity": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "torque": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "currentPosition": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "currentRotation": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "currentRotationUp": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "isUsed": 0
+     },
+     {
+      "rig": "ptr(0,0)",
+      "target": "ptr(0,0)",
+      "velocity": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "torque": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "currentPosition": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "currentRotation": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "currentRotationUp": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "isUsed": 0
+     },
+     {
+      "rig": "ptr(0,0)",
+      "target": "ptr(0,0)",
+      "velocity": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "torque": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "currentPosition": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "currentRotation": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "currentRotationUp": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "isUsed": 0
+     },
+     {
+      "rig": "ptr(0,0)",
+      "target": "ptr(0,0)",
+      "velocity": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "torque": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "currentPosition": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "currentRotation": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "currentRotationUp": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "isUsed": 0
+     },
+     {
+      "rig": "ptr(0,0)",
+      "target": "ptr(0,0)",
+      "velocity": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "torque": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "currentPosition": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "currentRotation": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "currentRotationUp": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "isUsed": 0
+     },
+     {
+      "rig": "ptr(0,0)",
+      "target": "ptr(0,0)",
+      "velocity": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "torque": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "currentPosition": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "currentRotation": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "currentRotationUp": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "isUsed": 0
+     },
+     {
+      "rig": "ptr(0,0)",
+      "target": "ptr(0,0)",
+      "velocity": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "torque": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "currentPosition": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "currentRotation": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "currentRotationUp": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "isUsed": 0
+     },
+     {
+      "rig": "ptr(0,0)",
+      "target": "ptr(0,0)",
+      "velocity": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "torque": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "currentPosition": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "currentRotation": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "currentRotationUp": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "isUsed": 0
+     },
+     {
+      "rig": "ptr(0,0)",
+      "target": "ptr(0,0)",
+      "velocity": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "torque": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "currentPosition": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "currentRotation": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "currentRotationUp": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "isUsed": 0
+     },
+     {
+      "rig": "ptr(0,0)",
+      "target": "ptr(0,0)",
+      "velocity": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "torque": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "currentPosition": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "currentRotation": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "currentRotationUp": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "isUsed": 0
+     }
+    ]
+   }
+  },
+  "UnitColorHandler": {
+   "pid": 69782,
+   "on": "Rigidbodies",
+   "data": {
+    "isDone": 0,
+    "colors": [],
+    "effectColor": {
+     "r": 0.0,
+     "g": 0.0,
+     "b": 0.0,
+     "a": 1.0
+    },
+    "totalValue": 0.0
+   }
+  }
+ },
+ "raw_helper_objects": {
+  "Direction": {
+   "local_pos": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "local_rot_xyzw": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "behaviours": [
+    "DirectionObject"
+   ]
+  },
+  "GroundedMovementDirection": {
+   "local_pos": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "local_rot_xyzw": [
+    -0.0,
+    -0.0,
+    -0.0,
+    1.0
+   ],
+   "behaviours": [
+    "GroundedDirectionObject"
+   ]
+  }
+ },
+ "raw_data_assets": {
+  "63264": {
+   "type": "BalanceData",
+   "data": {
+    "balanceInstances": [
+     {
+      "name": "Idle",
+      "ID": 0,
+      "force": 400.0,
+      "centerForce": 0.0
+     },
+     {
+      "name": "Walk",
+      "ID": 1,
+      "force": 25.0,
+      "centerForce": 0.0
+     },
+     {
+      "name": "Run",
+      "ID": 2,
+      "force": 70.0,
+      "centerForce": 0.0
+     },
+     {
+      "name": "Strafe",
+      "ID": 3,
+      "force": 25.0,
+      "centerForce": 15.0
+     }
+    ]
+   },
+   "name": "Balance"
+  },
+  "63266": {
+   "type": "CurveAnimationData",
+   "data": {
+    "animations": [
+     {
+      "name": "Walk",
+      "ID": 1,
+      "forward": {
+       "x": -200.0,
+       "y": -200.0,
+       "z": 0.0
+      },
+      "backward": {
+       "x": 200.0,
+       "y": 200.0,
+       "z": 0.0
+      },
+      "forceType": 3,
+      "curve": {
+       "m_Curve": [
+        {
+         "time": 0.0,
+         "value": 0.0,
+         "inSlope": 3.6157916,
+         "outSlope": 3.6157916,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3061225
+        },
+        {
+         "time": 0.5,
+         "value": 1.0062499,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        },
+        {
+         "time": 1.0,
+         "value": 0.0,
+         "inSlope": -3.8815556,
+         "outSlope": -3.8815556,
+         "weightedMode": 0,
+         "inWeight": 0.2397959,
+         "outWeight": 0.3333333
+        }
+       ],
+       "m_PreInfinity": 2,
+       "m_PostInfinity": 2,
+       "m_RotationOrder": 4
+      }
+     },
+     {
+      "name": "Run",
+      "ID": 2,
+      "forward": {
+       "x": -300.0,
+       "y": -300.0,
+       "z": 0.0
+      },
+      "backward": {
+       "x": 300.0,
+       "y": 300.0,
+       "z": 0.0
+      },
+      "forceType": 3,
+      "curve": {
+       "m_Curve": [
+        {
+         "time": 0.0,
+         "value": 0.0,
+         "inSlope": 4.0731244,
+         "outSlope": 4.0731244,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.2346939
+        },
+        {
+         "time": 0.5,
+         "value": 1.0062499,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        },
+        {
+         "time": 1.0,
+         "value": 0.0,
+         "inSlope": -4.299963,
+         "outSlope": -4.299963,
+         "weightedMode": 0,
+         "inWeight": 0.2193878,
+         "outWeight": 0.3333333
+        }
+       ],
+       "m_PreInfinity": 2,
+       "m_PostInfinity": 2,
+       "m_RotationOrder": 4
+      }
+     }
+    ],
+    "forceAnimations": []
+   },
+   "name": "C_Arms"
+  },
+  "63267": {
+   "type": "CurveAnimationData",
+   "data": {
+    "animations": [
+     {
+      "name": "Walk",
+      "ID": 1,
+      "forward": {
+       "x": 0.0,
+       "y": -100.0,
+       "z": 0.0
+      },
+      "backward": {
+       "x": 0.0,
+       "y": 100.0,
+       "z": 0.0
+      },
+      "forceType": 0,
+      "curve": {
+       "m_Curve": [
+        {
+         "time": 0.0,
+         "value": 0.0,
+         "inSlope": 4.1575756,
+         "outSlope": 4.1575756,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.0841837
+        },
+        {
+         "time": 1.0,
+         "value": 0.0,
+         "inSlope": -3.9925907,
+         "outSlope": -3.9925907,
+         "weightedMode": 0,
+         "inWeight": 0.0688776,
+         "outWeight": 0.3333333
+        }
+       ],
+       "m_PreInfinity": 2,
+       "m_PostInfinity": 2,
+       "m_RotationOrder": 4
+      }
+     },
+     {
+      "name": "Run",
+      "ID": 2,
+      "forward": {
+       "x": 0.0,
+       "y": -100.0,
+       "z": 0.0
+      },
+      "backward": {
+       "x": 0.0,
+       "y": 100.0,
+       "z": 0.0
+      },
+      "forceType": 0,
+      "curve": {
+       "m_Curve": [
+        {
+         "time": 0.0,
+         "value": 0.0,
+         "inSlope": 4.1575756,
+         "outSlope": 4.1575756,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.0841837
+        },
+        {
+         "time": 1.0,
+         "value": 0.0,
+         "inSlope": -3.9925907,
+         "outSlope": -3.9925907,
+         "weightedMode": 0,
+         "inWeight": 0.0688776,
+         "outWeight": 0.3333333
+        }
+       ],
+       "m_PreInfinity": 2,
+       "m_PostInfinity": 2,
+       "m_RotationOrder": 4
+      }
+     }
+    ],
+    "forceAnimations": []
+   },
+   "name": "C_Elbow"
+  },
+  "63268": {
+   "type": "CurveAnimationData",
+   "data": {
+    "animations": [
+     {
+      "name": "Walk",
+      "ID": 1,
+      "forward": {
+       "x": -230.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "backward": {
+       "x": 60.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "forceType": 2,
+      "curve": {
+       "m_Curve": [
+        {
+         "time": 0.0,
+         "value": 1.0,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        },
+        {
+         "time": 0.49,
+         "value": 0.0,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        },
+        {
+         "time": 1.0,
+         "value": 1.0,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        }
+       ],
+       "m_PreInfinity": 2,
+       "m_PostInfinity": 2,
+       "m_RotationOrder": 4
+      }
+     },
+     {
+      "name": "Run",
+      "ID": 2,
+      "forward": {
+       "x": -200.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "backward": {
+       "x": 200.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "forceType": 2,
+      "curve": {
+       "m_Curve": [
+        {
+         "time": 0.0,
+         "value": 1.0,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        },
+        {
+         "time": 0.5,
+         "value": 0.0,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        },
+        {
+         "time": 1.0,
+         "value": 1.0,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        }
+       ],
+       "m_PreInfinity": 2,
+       "m_PostInfinity": 2,
+       "m_RotationOrder": 4
+      }
+     },
+     {
+      "name": "Strafe",
+      "ID": 3,
+      "forward": {
+       "x": -300.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "backward": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "forceType": 0,
+      "curve": {
+       "m_Curve": [
+        {
+         "time": 0.0,
+         "value": 1.0,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        },
+        {
+         "time": 0.5,
+         "value": 0.0,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        },
+        {
+         "time": 1.0,
+         "value": 1.0,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        }
+       ],
+       "m_PreInfinity": 2,
+       "m_PostInfinity": 2,
+       "m_RotationOrder": 4
+      }
+     }
+    ],
+    "forceAnimations": [
+     {
+      "name": "Idle",
+      "ID": 0,
+      "forward": {
+       "x": 0.0,
+       "y": -145.0,
+       "z": 0.0
+      },
+      "backward": {
+       "x": 0.0,
+       "y": -145.0,
+       "z": 0.0
+      },
+      "forceType": 1,
+      "curve": {
+       "m_Curve": [
+        {
+         "time": 0.0,
+         "value": 1.0,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        },
+        {
+         "time": 1.0,
+         "value": 1.0,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        }
+       ],
+       "m_PreInfinity": 2,
+       "m_PostInfinity": 2,
+       "m_RotationOrder": 4
+      }
+     },
+     {
+      "name": "Walk",
+      "ID": 1,
+      "forward": {
+       "x": 0.0,
+       "y": 10.0,
+       "z": 0.0
+      },
+      "backward": {
+       "x": 0.0,
+       "y": -25.0,
+       "z": 0.0
+      },
+      "forceType": 1,
+      "curve": {
+       "m_Curve": [
+        {
+         "time": 0.0,
+         "value": 1.0,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        },
+        {
+         "time": 1.0,
+         "value": 1.0,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        }
+       ],
+       "m_PreInfinity": 2,
+       "m_PostInfinity": 2,
+       "m_RotationOrder": 4
+      }
+     },
+     {
+      "name": "Run",
+      "ID": 2,
+      "forward": {
+       "x": 0.0,
+       "y": 10.0,
+       "z": 0.0
+      },
+      "backward": {
+       "x": 0.0,
+       "y": -60.0,
+       "z": 0.0
+      },
+      "forceType": 1,
+      "curve": {
+       "m_Curve": [
+        {
+         "time": 0.0,
+         "value": 1.0,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        },
+        {
+         "time": 1.0,
+         "value": 1.0,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        }
+       ],
+       "m_PreInfinity": 2,
+       "m_PostInfinity": 2,
+       "m_RotationOrder": 4
+      }
+     },
+     {
+      "name": "Run",
+      "ID": 2,
+      "forward": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 20.0
+      },
+      "backward": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "forceType": 4,
+      "curve": {
+       "m_Curve": [
+        {
+         "time": 0.0,
+         "value": 1.0,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        },
+        {
+         "time": 1.0,
+         "value": 1.0,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        }
+       ],
+       "m_PreInfinity": 2,
+       "m_PostInfinity": 2,
+       "m_RotationOrder": 4
+      }
+     },
+     {
+      "name": "Walk",
+      "ID": 1,
+      "forward": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 15.0
+      },
+      "backward": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": -5.0
+      },
+      "forceType": 4,
+      "curve": {
+       "m_Curve": [
+        {
+         "time": 0.0,
+         "value": 1.0,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        },
+        {
+         "time": 1.0,
+         "value": 1.0,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        }
+       ],
+       "m_PreInfinity": 2,
+       "m_PostInfinity": 2,
+       "m_RotationOrder": 4
+      }
+     },
+     {
+      "name": "Strafe",
+      "ID": 3,
+      "forward": {
+       "x": 0.0,
+       "y": 25.0,
+       "z": 0.0
+      },
+      "backward": {
+       "x": 0.0,
+       "y": -35.0,
+       "z": 0.0
+      },
+      "forceType": 1,
+      "curve": {
+       "m_Curve": [
+        {
+         "time": 0.0,
+         "value": 1.0,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        },
+        {
+         "time": 1.0,
+         "value": 1.0,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        }
+       ],
+       "m_PreInfinity": 2,
+       "m_PostInfinity": 2,
+       "m_RotationOrder": 4
+      }
+     },
+     {
+      "name": "Strafe",
+      "ID": 3,
+      "forward": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 15.0
+      },
+      "backward": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": -15.0
+      },
+      "forceType": 4,
+      "curve": {
+       "m_Curve": [
+        {
+         "time": 0.0,
+         "value": 1.0,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        },
+        {
+         "time": 1.0,
+         "value": 1.0,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        }
+       ],
+       "m_PreInfinity": 2,
+       "m_PostInfinity": 2,
+       "m_RotationOrder": 4
+      }
+     }
+    ]
+   },
+   "name": "C_Knees"
+  },
+  "63269": {
+   "type": "CurveAnimationData",
+   "data": {
+    "animations": [
+     {
+      "name": "Walk",
+      "ID": 1,
+      "forward": {
+       "x": 100.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "backward": {
+       "x": -250.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "forceType": 2,
+      "curve": {
+       "m_Curve": [
+        {
+         "time": 0.0,
+         "value": 0.0,
+         "inSlope": 4.1575756,
+         "outSlope": 4.1575756,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.0841837
+        },
+        {
+         "time": 1.0,
+         "value": 0.0,
+         "inSlope": -3.9925907,
+         "outSlope": -3.9925907,
+         "weightedMode": 0,
+         "inWeight": 0.0688776,
+         "outWeight": 0.3333333
+        }
+       ],
+       "m_PreInfinity": 2,
+       "m_PostInfinity": 2,
+       "m_RotationOrder": 4
+      }
+     },
+     {
+      "name": "Run",
+      "ID": 2,
+      "forward": {
+       "x": 300.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "backward": {
+       "x": -400.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "forceType": 2,
+      "curve": {
+       "m_Curve": [
+        {
+         "time": 0.0,
+         "value": 0.0,
+         "inSlope": 5.1924996,
+         "outSlope": 5.1924996,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.8147663
+        },
+        {
+         "time": 0.0782746,
+         "value": 0.392428,
+         "inSlope": 4.2097764,
+         "outSlope": 4.2097764,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.1591842
+        },
+        {
+         "time": 0.5000098,
+         "value": 1.0082066,
+         "inSlope": -0.0201972,
+         "outSlope": -0.0201972,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        },
+        {
+         "time": 1.0,
+         "value": 0.0,
+         "inSlope": -3.9925907,
+         "outSlope": -3.9925907,
+         "weightedMode": 0,
+         "inWeight": 0.0688776,
+         "outWeight": 0.3333333
+        }
+       ],
+       "m_PreInfinity": 2,
+       "m_PostInfinity": 2,
+       "m_RotationOrder": 4
+      }
+     }
+    ],
+    "forceAnimations": []
+   },
+   "name": "C_Leg"
+  },
+  "63270": {
+   "type": "CurveAnimationData",
+   "data": {
+    "animations": [],
+    "forceAnimations": [
+     {
+      "name": "Walk",
+      "ID": 1,
+      "forward": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "backward": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 0.0
+      },
+      "forceType": 4,
+      "curve": {
+       "m_Curve": [
+        {
+         "time": 0.0,
+         "value": 1.0,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        },
+        {
+         "time": 1.0,
+         "value": 1.0,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        }
+       ],
+       "m_PreInfinity": 2,
+       "m_PostInfinity": 2,
+       "m_RotationOrder": 4
+      }
+     },
+     {
+      "name": "Run",
+      "ID": 2,
+      "forward": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 15.0
+      },
+      "backward": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 15.0
+      },
+      "forceType": 4,
+      "curve": {
+       "m_Curve": [
+        {
+         "time": 0.0,
+         "value": 1.0,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        },
+        {
+         "time": 1.0,
+         "value": 1.0,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        }
+       ],
+       "m_PreInfinity": 2,
+       "m_PostInfinity": 2,
+       "m_RotationOrder": 4
+      }
+     }
+    ]
+   },
+   "name": "C_Torso"
+  },
+  "63273": {
+   "type": "GravityData",
+   "data": {
+    "gravity": 20.0
+   },
+   "name": "GravityData"
+  },
+  "63279": {
+   "type": "AnimationJointData",
+   "data": {
+    "joints": [
+     {
+      "name": "Walk",
+      "ID": 1,
+      "useTwist": 1,
+      "lowTwist": -100.0,
+      "highTwist": -5.0,
+      "useAngularY": 0,
+      "angularY": 0.0,
+      "useAngularZ": 0,
+      "angularZ": 0.0
+     },
+     {
+      "name": "Run",
+      "ID": 2,
+      "useTwist": 1,
+      "lowTwist": -100.0,
+      "highTwist": -20.0,
+      "useAngularY": 0,
+      "angularY": 0.0,
+      "useAngularZ": 0,
+      "angularZ": 0.0
+     }
+    ]
+   },
+   "name": "J_Knee"
+  },
+  "63280": {
+   "type": "AnimationJointData",
+   "data": {
+    "joints": [
+     {
+      "name": "Strafe",
+      "ID": 3,
+      "useTwist": 0,
+      "lowTwist": 0.0,
+      "highTwist": 0.0,
+      "useAngularY": 0,
+      "angularY": 0.0,
+      "useAngularZ": 1,
+      "angularZ": 25.0
+     },
+     {
+      "name": "Run",
+      "ID": 2,
+      "useTwist": 0,
+      "lowTwist": 0.0,
+      "highTwist": 0.0,
+      "useAngularY": 0,
+      "angularY": 0.0,
+      "useAngularZ": 1,
+      "angularZ": 20.0
+     },
+     {
+      "name": "Idle",
+      "ID": 0,
+      "useTwist": 0,
+      "lowTwist": 0.0,
+      "highTwist": 0.0,
+      "useAngularY": 0,
+      "angularY": 0.0,
+      "useAngularZ": 1,
+      "angularZ": 20.0
+     },
+     {
+      "name": "Walk",
+      "ID": 1,
+      "useTwist": 0,
+      "lowTwist": 0.0,
+      "highTwist": 0.0,
+      "useAngularY": 0,
+      "angularY": 0.0,
+      "useAngularZ": 1,
+      "angularZ": 20.0
+     }
+    ]
+   },
+   "name": "J_Leg"
+  },
+  "63283": {
+   "type": "MovementHandlerData",
+   "data": {
+    "moves": [
+     {
+      "name": "Idle",
+      "ID": 0,
+      "force": 0.0
+     },
+     {
+      "name": "Walk",
+      "ID": 1,
+      "force": 9.0
+     },
+     {
+      "name": "Run",
+      "ID": 2,
+      "force": 13.0
+     },
+     {
+      "name": "Strafe",
+      "ID": 3,
+      "force": 4.0
+     }
+    ]
+   },
+   "name": "Movement"
+  },
+  "63288": {
+   "type": "StandingData",
+   "data": {
+    "defaultSate": 0,
+    "baseOffset": 0.03,
+    "standingForce": 100.0,
+    "standingInstances": [
+     {
+      "name": "Idle",
+      "id": 0,
+      "curve": {
+       "m_Curve": [
+        {
+         "time": 0.0,
+         "value": 1.0011714,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        },
+        {
+         "time": 1.6955017,
+         "value": 1.0011714,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        },
+        {
+         "time": 1.7112404,
+         "value": 0.0,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.0,
+         "outWeight": 0.0
+        }
+       ],
+       "m_PreInfinity": 2,
+       "m_PostInfinity": 2,
+       "m_RotationOrder": 0
+      },
+      "bobCurve": {
+       "m_Curve": [],
+       "m_PreInfinity": 2,
+       "m_PostInfinity": 2,
+       "m_RotationOrder": 4
+      },
+      "staticAngleLowering": 1.0,
+      "downHillHelp": 0.0,
+      "UpHillHelp": 5.0
+     },
+     {
+      "name": "Walk",
+      "id": 1,
+      "curve": {
+       "m_Curve": [
+        {
+         "time": 0.0,
+         "value": 1.0011714,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        },
+        {
+         "time": 1.6605831,
+         "value": 1.0011714,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        },
+        {
+         "time": 1.6759977,
+         "value": 0.0,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.0,
+         "outWeight": 0.0
+        }
+       ],
+       "m_PreInfinity": 2,
+       "m_PostInfinity": 2,
+       "m_RotationOrder": 0
+      },
+      "bobCurve": {
+       "m_Curve": [
+        {
+         "time": 0.0,
+         "value": 0.0535338,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        },
+        {
+         "time": 0.5,
+         "value": -0.0195402,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        },
+        {
+         "time": 1.0,
+         "value": 0.0535338,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        }
+       ],
+       "m_PreInfinity": 2,
+       "m_PostInfinity": 2,
+       "m_RotationOrder": 4
+      },
+      "staticAngleLowering": 0.0,
+      "downHillHelp": 15.0,
+      "UpHillHelp": 1.0
+     },
+     {
+      "name": "Run",
+      "id": 2,
+      "curve": {
+       "m_Curve": [
+        {
+         "time": 0.0,
+         "value": 1.0011714,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        },
+        {
+         "time": 1.7338529,
+         "value": 1.0011714,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        },
+        {
+         "time": 1.7499478,
+         "value": 0.0,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.0,
+         "outWeight": 0.0
+        }
+       ],
+       "m_PreInfinity": 2,
+       "m_PostInfinity": 2,
+       "m_RotationOrder": 0
+      },
+      "bobCurve": {
+       "m_Curve": [
+        {
+         "time": 0.0,
+         "value": 0.1000061,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        },
+        {
+         "time": 0.5,
+         "value": -0.0295494,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        },
+        {
+         "time": 1.0,
+         "value": 0.1000061,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        }
+       ],
+       "m_PreInfinity": 2,
+       "m_PostInfinity": 2,
+       "m_RotationOrder": 4
+      },
+      "staticAngleLowering": 0.0,
+      "downHillHelp": 5.0,
+      "UpHillHelp": 1.0
+     },
+     {
+      "name": "Strafe",
+      "id": 3,
+      "curve": {
+       "m_Curve": [
+        {
+         "time": -0.02,
+         "value": 1.0000002,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.3333333,
+         "outWeight": 0.3333333
+        },
+        {
+         "time": 1.71595,
+         "value": 1.0011714,
+         "inSlope": -0.4765716,
+         "outSlope": -0.4765716,
+         "weightedMode": 0,
+         "inWeight": 0.0432483,
+         "outWeight": 0.3333333
+        },
+        {
+         "time": 1.7318798,
+         "value": 0.0,
+         "inSlope": 0.0,
+         "outSlope": 0.0,
+         "weightedMode": 0,
+         "inWeight": 0.0,
+         "outWeight": 0.0
+        }
+       ],
+       "m_PreInfinity": 2,
+       "m_PostInfinity": 2,
+       "m_RotationOrder": 0
+      },
+      "bobCurve": {
+       "m_Curve": [],
+       "m_PreInfinity": 2,
+       "m_PostInfinity": 2,
+       "m_RotationOrder": 4
+      },
+      "staticAngleLowering": 0.0,
+      "downHillHelp": 5.0,
+      "UpHillHelp": 5.0
+     }
+    ]
+   },
+   "name": "StandingData"
+  },
+  "63292": {
+   "type": "StepData",
+   "data": {
+    "defaultState": 0,
+    "steps": [
+     {
+      "name": "Idle",
+      "ID": 0,
+      "minTime": 0.2,
+      "maxTime": 0.2
+     },
+     {
+      "name": "Walk",
+      "ID": 1,
+      "minTime": 0.4,
+      "maxTime": 0.8
+     },
+     {
+      "name": "Run",
+      "ID": 2,
+      "minTime": 0.3,
+      "maxTime": 0.5
+     },
+     {
+      "name": "Strafe",
+      "ID": 3,
+      "minTime": 0.2,
+      "maxTime": 0.4
+     }
+    ]
+   },
+   "name": "Step"
+  }
+ },
+ "raw_fist_weapon": {
+  "colliders": [
+   {
+    "child": "Cube (6)",
+    "pid": 56816,
+    "material_pid": "ptr(0,7530)",
+    "trigger": false,
+    "size": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "local_pos": [
+     0.001,
+     0.006,
+     0.0434
+    ],
+    "local_rot_xyzw": [
+     -0.0,
+     -0.0,
+     -0.0,
+     -1.0
+    ],
+    "local_scale": [
+     0.1382176,
+     0.4144868,
+     0.1709125
+    ],
+    "layer": 0
+   },
+   {
+    "child": "Cube (7)",
+    "pid": 56149,
+    "material_pid": "ptr(0,7530)",
+    "trigger": false,
+    "size": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "local_pos": [
+     0.001,
+     0.059,
+     0.096
+    ],
+    "local_rot_xyzw": [
+     -0.3826827,
+     -0.0,
+     -0.0,
+     -0.9238798
+    ],
+    "local_scale": [
+     0.1382176,
+     0.2562979,
+     0.1709125
+    ],
+    "layer": 0
+   },
+   {
+    "child": "Cube (8)",
+    "pid": 56113,
+    "material_pid": "ptr(0,7530)",
+    "trigger": false,
+    "size": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "local_pos": [
+     0.001,
+     -0.059,
+     0.096
+    ],
+    "local_rot_xyzw": [
+     -0.3826834,
+     0.0,
+     0.0,
+     0.9238796
+    ],
+    "local_scale": [
+     0.1382176,
+     0.2562979,
+     0.1709125
+    ],
+    "layer": 0
+   },
+   {
+    "child": "Cube (9)",
+    "pid": 55985,
+    "material_pid": "ptr(0,7530)",
+    "trigger": false,
+    "size": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "center": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "local_pos": [
+     0.001,
+     0.0,
+     0.096
+    ],
+    "local_rot_xyzw": [
+     -0.7071066,
+     -0.0,
+     -0.0,
+     0.7071069
+    ],
+    "local_scale": [
+     0.1382176,
+     0.2959216,
+     0.1709125
+    ],
+    "layer": 0
+   }
+  ],
+  "behaviours": {
+   "MeleeWeapon": {
+    "pid": 69484,
+    "data": {
+     "weaponMaterialType": 0,
+     "weaponAlignment": 1,
+     "m_weaponType": 0,
+     "m_weaponTargetType": 0,
+     "faction": "ptr(0,63033)",
+     "weaponList": [
+      "ptr(0,69484)"
+     ],
+     "defaultDrag": 2.0,
+     "defaultAngularDrag": 2.0,
+     "internalCooldown": 0.2,
+     "randomCooldown": 0,
+     "maxRange": 100000.0,
+     "maxAngle": 360.0,
+     "startOnCooldown": 0,
+     "countSelf": 1,
+     "onlyCountInRange": 0,
+     "levelMultiplier": 1.0,
+     "internalCounter": 100.0,
+     "rigidbody": "ptr(0,55402)",
+     "attackEffects": [],
+     "callAttackEffects": 1,
+     "useTargetingWhenPossessed": 1,
+     "possessionAimingMode": 0,
+     "isRange": 0,
+     "attackSpeedM": 1.0,
+     "auto": 0,
+     "forceCurve": {
+      "m_Curve": [
+       {
+        "time": 0.0,
+        "value": 1.0,
+        "inSlope": 0.0,
+        "outSlope": 0.0,
+        "weightedMode": 0,
+        "inWeight": 0.0,
+        "outWeight": 0.3333333
+       },
+       {
+        "time": 0.3777589,
+        "value": 1.0,
+        "inSlope": 0.0,
+        "outSlope": 0.0,
+        "weightedMode": 0,
+        "inWeight": 0.3333333,
+        "outWeight": 0.0
+       }
+      ],
+      "m_PreInfinity": 2,
+      "m_PostInfinity": 2,
+      "m_RotationOrder": 4
+     },
+     "curveForce": 10000.0,
+     "additionalRigs": [],
+     "swingDirection": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+     },
+     "isSwinging": 0,
+     "sinceSwing": 0.0,
+     "canDealDamage": 0,
+     "setDirectionContinious": 1,
+     "directionContiniousLerp": 0.0,
+     "setDirectionContiniousDuringWindup": 0,
+     "yTargetOffset": 0.0,
+     "canDealDamageOutSideOfSwing": 0,
+     "requiredPowerToParry": 0.0,
+     "soundRef": "Fantasy Light Attacks/Gauntlet",
+     "soundPathData": {
+      "Category": "Fantasy Light Attacks",
+      "Effect": "Gauntlet",
+      "EffectPitch": 1.0,
+      "EffectVolume": 1.0
+     },
+     "soundDelay": 0.2,
+     "swingEvent": {
+      "m_PersistentCalls": {
+       "m_Calls": [
+        {
+         "m_Target": "ptr(0,69918)",
+         "m_MethodName": "DoMove",
+         "m_Mode": 1,
+         "m_Arguments": {
+          "m_ObjectArgument": "ptr(0,0)",
+          "m_ObjectArgumentAssemblyTypeName": "UnityEngine.Object, UnityEngine",
+          "m_IntArgument": 0,
+          "m_FloatArgument": 0.0,
+          "m_StringArgument": "",
+          "m_BoolArgument": 0
+         },
+         "m_CallState": 2
+        },
+        {
+         "m_Target": "ptr(0,69475)",
+         "m_MethodName": "Go",
+         "m_Mode": 1,
+         "m_Arguments": {
+          "m_ObjectArgument": "ptr(0,0)",
+          "m_ObjectArgumentAssemblyTypeName": "UnityEngine.Object, UnityEngine",
+          "m_IntArgument": 0,
+          "m_FloatArgument": 0.0,
+          "m_StringArgument": "",
+          "m_BoolArgument": 0
+         },
+         "m_CallState": 2
+        }
+       ]
+      }
+     }
+    }
+   },
+   "Holdable": {
+    "pid": 69485,
+    "data": {
+     "col": "ptr(0,0)",
+     "holdableData": {
+      "leftHand": "ptr(0,37059)",
+      "rightHand": "ptr(0,37058)",
+      "relativePosition": {
+       "x": 0.1,
+       "y": 0.4,
+       "z": 0.4
+      },
+      "forwardRotation": {
+       "x": 0.0,
+       "y": 0.0,
+       "z": 1.0
+      },
+      "upRotation": {
+       "x": 0.5,
+       "y": -1.0,
+       "z": 0.1
+      },
+      "lookAtTargetWhenWithin": 0.0,
+      "extraGrabDistance": 0.0,
+      "setRotation": 0,
+      "snapConnect": 0
+     },
+     "pidData": {
+      "rig": "ptr(0,55402)",
+      "disableForceDuringSwing": 0,
+      "proportionalForce": 200.0,
+      "disableTorqueDuringSwing": 1,
+      "proportionalTorque": 5.0,
+      "holdingForceMultiplier": 1.0,
+      "holdingTorqueMultiplier": 1.0,
+      "capAngle": 0.0,
+      "extraUpPerMeter": 0.0
+     },
+     "jointData": {
+      "angularDrive": 1.0,
+      "limit": 45.0
+     },
+     "rig": "ptr(0,55402)",
+     "held": 1,
+     "ignoreDissarm": 0,
+     "useAlternaticeForIceGiant": 0,
+     "iceGiantRelativePosition": {
+      "x": 0.0,
+      "y": 0.1,
+      "z": 0.2
+     },
+     "holderData": "ptr(0,0)",
+     "holdingVariationCurve": {
+      "m_Curve": [
+       {
+        "time": 0.0,
+        "value": 0.0,
+        "inSlope": 0.0,
+        "outSlope": 0.0,
+        "weightedMode": 0,
+        "inWeight": 0.0,
+        "outWeight": 0.3333333
+       },
+       {
+        "time": 1.0,
+        "value": 0.0,
+        "inSlope": 0.0,
+        "outSlope": 0.0,
+        "weightedMode": 0,
+        "inWeight": 0.3333333,
+        "outWeight": 0.0
+       }
+      ],
+      "m_PreInfinity": 2,
+      "m_PostInfinity": 2,
+      "m_RotationOrder": 4
+     },
+     "dropEvent": {
+      "m_PersistentCalls": {
+       "m_Calls": []
+      }
+     },
+     "moveTo": "ptr(0,0)",
+     "holdingHandler": "ptr(0,0)",
+     "hr": "ptr(0,0)",
+     "hl": "ptr(0,0)"
+    }
+   },
+   "CollisionWeapon": {
+    "pid": 69480,
+    "data": {
+     "damage": 30000.0,
+     "selfDamageMultiplier": 0.0,
+     "impactMultiplier": 25.0,
+     "enemyMassPow": 1.0,
+     "minVelocity": 0.0,
+     "screenShakeMultiplier": 1.0,
+     "onImpactForce": 15000000.0,
+     "massCap": 1500000.0,
+     "ignoreTeamMates": 0,
+     "teamDamage": 0.1,
+     "staticDamageValue": 0,
+     "onlyOncePerData": 0,
+     "hitFasterAfterDealDamage": 0,
+     "useHitDirection": 0,
+     "playSoundWhenHitNonRigidbodies": 1,
+     "protectedRigs": [],
+     "dealDamageEvent": {
+      "m_PersistentCalls": {
+       "m_Calls": [
+        {
+         "m_Target": "ptr(0,60482)",
+         "m_MethodName": "Play",
+         "m_Mode": 1,
+         "m_Arguments": {
+          "m_ObjectArgument": "ptr(0,0)",
+          "m_ObjectArgumentAssemblyTypeName": "UnityEngine.Object, UnityEngine",
+          "m_IntArgument": 0,
+          "m_FloatArgument": 0.0,
+          "m_StringArgument": "",
+          "m_BoolArgument": 0
+         },
+         "m_CallState": 2
+        }
+       ]
+      }
+     },
+     "lastHitHealth": "ptr(0,0)",
+     "cooldown": 0.0,
+     "onlyCollideWithRigs": 0,
+     "callEffectsOn": 0
+    }
+   },
+   "Cost": {
+    "pid": 69477,
+    "data": {
+     "m_cost": 60
+    }
+   },
+   "CollisionSound": {
+    "pid": 69483,
+    "data": {
+     "soundEffectRef": "Fantasy Light Hits/Gauntlet",
+     "soundEffectPathData": {
+      "Category": "Fantasy Light Hits",
+      "Effect": "Gauntlet",
+      "EffectPitch": 1.0,
+      "EffectVolume": 1.0
+     },
+     "multiplier": 1.0,
+     "onlySoundOnRig": 0
+    }
+   },
+   "WeaponItem": {
+    "pid": 69482,
+    "data": {
+     "tags": [
+      {
+       "tagType": 0,
+       "value": "FACTION_LEGACY"
+      }
+     ],
+     "m_entity": {
+      "m_name": "WEAPON_LEGACY_LEG_SUPERP_W",
+      "m_spriteIcon": "ptr(0,7740)",
+      "m_spriteIconPath": "",
+      "m_guid": {
+       "m_modID": -1,
+       "m_ID": 1467486929
+      },
+      "m_unlockKey": ""
+     },
+     "m_showInEditor": 1,
+     "m_unitBasesRestriction": 7,
+     "m_gearType": 10,
+     "m_forceBoneAttach": 0,
+     "SubmeshArea": [],
+     "cameraPos": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+     },
+     "cameraRot": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "w": 0.0
+     },
+     "extraObjectToSpawn": "ptr(0,0)"
+    }
+   },
+   "DodgeMove": {
+    "pid": 69918,
+    "data": {
+     "targetObject": "ptr(0,0)",
+     "animationSpeed": 1.0,
+     "animationSpeedWhenPositiveCurve": 1.0,
+     "forceMultiplier": 1.0,
+     "divideForceByMass": 0,
+     "cancelSelf": 0,
+     "usedAsMovement": 0,
+     "randomForceMultiplier": 0,
+     "minRange": 0.0,
+     "maxRange": 0.0,
+     "moves": [
+      {
+       "force": 500.0,
+       "torque": 0.0,
+       "forceCurve": {
+        "m_Curve": [
+         {
+          "time": 0.0,
+          "value": 1.0,
+          "inSlope": 0.0,
+          "outSlope": 0.0,
+          "weightedMode": 0,
+          "inWeight": 0.0,
+          "outWeight": 0.3333333
+         },
+         {
+          "time": 0.25,
+          "value": 1.0,
+          "inSlope": 0.0,
+          "outSlope": 0.0,
+          "weightedMode": 0,
+          "inWeight": 0.3333333,
+          "outWeight": 0.0
+         }
+        ],
+        "m_PreInfinity": 2,
+        "m_PostInfinity": 2,
+        "m_RotationOrder": 4
+       },
+       "rigidbodyToMove": 1,
+       "specificRig": "ptr(0,0)",
+       "forceDirection": 1,
+       "setDirectionContiniouiouss": 1,
+       "includeWeapons": 0,
+       "ignoreY": 1,
+       "predictionAmount": 0.2,
+       "randomizeDirection": 0,
+       "normalize": 1,
+       "useAlternateForceProjectMarsClient": 0,
+       "alternateClientForce": 0.0,
+       "randomMultiplier": 1.0,
+       "randomCurve": {
+        "m_Curve": [
+         {
+          "time": 0.0,
+          "value": 1.0,
+          "inSlope": 0.0,
+          "outSlope": 0.0,
+          "weightedMode": 0,
+          "inWeight": 0.0,
+          "outWeight": 0.0
+         },
+         {
+          "time": 1.0,
+          "value": 1.0,
+          "inSlope": 0.0,
+          "outSlope": 0.0,
+          "weightedMode": 0,
+          "inWeight": 0.0,
+          "outWeight": 0.0
+         }
+        ],
+        "m_PreInfinity": 2,
+        "m_PostInfinity": 2,
+        "m_RotationOrder": 4
+       }
+      },
+      {
+       "force": 400.0,
+       "torque": 0.0,
+       "forceCurve": {
+        "m_Curve": [
+         {
+          "time": 0.0,
+          "value": 1.0,
+          "inSlope": 0.0,
+          "outSlope": 0.0,
+          "weightedMode": 0,
+          "inWeight": 0.0,
+          "outWeight": 0.3333333
+         },
+         {
+          "time": 0.25,
+          "value": 1.0,
+          "inSlope": 0.0,
+          "outSlope": 0.0,
+          "weightedMode": 0,
+          "inWeight": 0.3333333,
+          "outWeight": 0.0
+         }
+        ],
+        "m_PreInfinity": 2,
+        "m_PostInfinity": 2,
+        "m_RotationOrder": 4
+       },
+       "rigidbodyToMove": 5,
+       "specificRig": "ptr(0,0)",
+       "forceDirection": 1,
+       "setDirectionContiniouiouss": 1,
+       "includeWeapons": 1,
+       "ignoreY": 1,
+       "predictionAmount": 0.2,
+       "randomizeDirection": 0,
+       "normalize": 1,
+       "useAlternateForceProjectMarsClient": 0,
+       "alternateClientForce": 0.0,
+       "randomMultiplier": 1.0,
+       "randomCurve": {
+        "m_Curve": [
+         {
+          "time": 0.0,
+          "value": 1.0,
+          "inSlope": 0.0,
+          "outSlope": 0.0,
+          "weightedMode": 0,
+          "inWeight": 0.0,
+          "outWeight": 0.0
+         },
+         {
+          "time": 1.0,
+          "value": 1.0,
+          "inSlope": 0.0,
+          "outSlope": 0.0,
+          "weightedMode": 0,
+          "inWeight": 0.0,
+          "outWeight": 0.0
+         }
+        ],
+        "m_PreInfinity": 2,
+        "m_PostInfinity": 2,
+        "m_RotationOrder": 4
+       }
+      },
+      {
+       "force": -250.0,
+       "torque": 0.0,
+       "forceCurve": {
+        "m_Curve": [
+         {
+          "time": 0.0,
+          "value": 1.0,
+          "inSlope": 0.0,
+          "outSlope": 0.0,
+          "weightedMode": 0,
+          "inWeight": 0.0,
+          "outWeight": 0.3333333
+         },
+         {
+          "time": 0.25,
+          "value": 1.0,
+          "inSlope": 0.0,
+          "outSlope": 0.0,
+          "weightedMode": 0,
+          "inWeight": 0.3333333,
+          "outWeight": 0.0
+         }
+        ],
+        "m_PreInfinity": 2,
+        "m_PostInfinity": 2,
+        "m_RotationOrder": 4
+       },
+       "rigidbodyToMove": 3,
+       "specificRig": "ptr(0,0)",
+       "forceDirection": 1,
+       "setDirectionContiniouiouss": 1,
+       "includeWeapons": 0,
+       "ignoreY": 1,
+       "predictionAmount": 0.2,
+       "randomizeDirection": 0,
+       "normalize": 1,
+       "useAlternateForceProjectMarsClient": 0,
+       "alternateClientForce": 0.0,
+       "randomMultiplier": 1.0,
+       "randomCurve": {
+        "m_Curve": [
+         {
+          "time": 0.0,
+          "value": 1.0,
+          "inSlope": 0.0,
+          "outSlope": 0.0,
+          "weightedMode": 0,
+          "inWeight": 0.0,
+          "outWeight": 0.0
+         },
+         {
+          "time": 1.0,
+          "value": 1.0,
+          "inSlope": 0.0,
+          "outSlope": 0.0,
+          "weightedMode": 0,
+          "inWeight": 0.0,
+          "outWeight": 0.0
+         }
+        ],
+        "m_PreInfinity": 2,
+        "m_PostInfinity": 2,
+        "m_RotationOrder": 4
+       }
+      },
+      {
+       "force": -250.0,
+       "torque": 0.0,
+       "forceCurve": {
+        "m_Curve": [
+         {
+          "time": 0.0,
+          "value": 1.0,
+          "inSlope": 0.0,
+          "outSlope": 0.0,
+          "weightedMode": 0,
+          "inWeight": 0.0,
+          "outWeight": 0.3333333
+         },
+         {
+          "time": 0.25,
+          "value": 1.0,
+          "inSlope": 0.0,
+          "outSlope": 0.0,
+          "weightedMode": 0,
+          "inWeight": 0.3333333,
+          "outWeight": 0.0
+         }
+        ],
+        "m_PreInfinity": 2,
+        "m_PostInfinity": 2,
+        "m_RotationOrder": 4
+       },
+       "rigidbodyToMove": 4,
+       "specificRig": "ptr(0,0)",
+       "forceDirection": 1,
+       "setDirectionContiniouiouss": 1,
+       "includeWeapons": 0,
+       "ignoreY": 1,
+       "predictionAmount": 0.2,
+       "randomizeDirection": 0,
+       "normalize": 1,
+       "useAlternateForceProjectMarsClient": 0,
+       "alternateClientForce": 0.0,
+       "randomMultiplier": 1.0,
+       "randomCurve": {
+        "m_Curve": [
+         {
+          "time": 0.0,
+          "value": 1.0,
+          "inSlope": 0.0,
+          "outSlope": 0.0,
+          "weightedMode": 0,
+          "inWeight": 0.0,
+          "outWeight": 0.0
+         },
+         {
+          "time": 1.0,
+          "value": 1.0,
+          "inSlope": 0.0,
+          "outSlope": 0.0,
+          "weightedMode": 0,
+          "inWeight": 0.0,
+          "outWeight": 0.0
+         }
+        ],
+        "m_PreInfinity": 2,
+        "m_PostInfinity": 2,
+        "m_RotationOrder": 4
+       }
+      },
+      {
+       "force": -300.0,
+       "torque": 0.0,
+       "forceCurve": {
+        "m_Curve": [
+         {
+          "time": 0.0,
+          "value": 1.0,
+          "inSlope": 0.0,
+          "outSlope": 0.0,
+          "weightedMode": 0,
+          "inWeight": 0.0,
+          "outWeight": 0.3333333
+         },
+         {
+          "time": 0.25,
+          "value": 1.0,
+          "inSlope": 0.0,
+          "outSlope": 0.0,
+          "weightedMode": 0,
+          "inWeight": 0.3333333,
+          "outWeight": 0.0
+         }
+        ],
+        "m_PreInfinity": 2,
+        "m_PostInfinity": 2,
+        "m_RotationOrder": 4
+       },
+       "rigidbodyToMove": 2,
+       "specificRig": "ptr(0,0)",
+       "forceDirection": 1,
+       "setDirectionContiniouiouss": 1,
+       "includeWeapons": 0,
+       "ignoreY": 1,
+       "predictionAmount": 0.2,
+       "randomizeDirection": 0,
+       "normalize": 1,
+       "useAlternateForceProjectMarsClient": 0,
+       "alternateClientForce": 0.0,
+       "randomMultiplier": 1.0,
+       "randomCurve": {
+        "m_Curve": [
+         {
+          "time": 0.0,
+          "value": 1.0,
+          "inSlope": 0.0,
+          "outSlope": 0.0,
+          "weightedMode": 0,
+          "inWeight": 0.0,
+          "outWeight": 0.0
+         },
+         {
+          "time": 1.0,
+          "value": 1.0,
+          "inSlope": 0.0,
+          "outSlope": 0.0,
+          "weightedMode": 0,
+          "inWeight": 0.0,
+          "outWeight": 0.0
+         }
+        ],
+        "m_PreInfinity": 2,
+        "m_PostInfinity": 2,
+        "m_RotationOrder": 4
+       }
+      }
+     ],
+     "allowForMartian": 0
+    }
+   },
+   "WeaponForceAnimation": {
+    "pid": 69486,
+    "data": {
+     "animations": [
+      {
+       "animationDirection": 0,
+       "animationRig": 0,
+       "animationDelay": 0.0,
+       "rangeMultiplierCurve": {
+        "m_Curve": [
+         {
+          "time": 0.0,
+          "value": 1.0,
+          "inSlope": 0.0,
+          "outSlope": 0.0,
+          "weightedMode": 0,
+          "inWeight": 0.0,
+          "outWeight": 0.0
+         },
+         {
+          "time": 1.0,
+          "value": 1.0,
+          "inSlope": 0.0,
+          "outSlope": 0.0,
+          "weightedMode": 0,
+          "inWeight": 0.0,
+          "outWeight": 0.0
+         }
+        ],
+        "m_PreInfinity": 2,
+        "m_PostInfinity": 2,
+        "m_RotationOrder": 4
+       },
+       "rigAnimationCurve": {
+        "m_Curve": [
+         {
+          "time": 0.0,
+          "value": 1.0,
+          "inSlope": 0.0,
+          "outSlope": 0.0,
+          "weightedMode": 0,
+          "inWeight": 0.0,
+          "outWeight": 0.3333333
+         },
+         {
+          "time": 0.25,
+          "value": 1.0,
+          "inSlope": 0.0,
+          "outSlope": 0.0,
+          "weightedMode": 0,
+          "inWeight": 0.3333333,
+          "outWeight": 0.0
+         }
+        ],
+        "m_PreInfinity": 2,
+        "m_PostInfinity": 2,
+        "m_RotationOrder": 4
+       },
+       "rigAnimationForce": 100.0,
+       "setDirectionContinious": 1,
+       "invertForceIfLeft": 0
+      }
+     ],
+     "immunityTime": 0.0,
+     "upwardsModifier": 0.0,
+     "chance": 0.0
+    }
+   },
+   "UnitDontFallForSeconds": {
+    "pid": 69475,
+    "data": {
+     "seconds": 5.0
+    }
+   }
+  },
+  "children": {
+   "RightHand": {
+    "local_pos": [
+     -0.0501,
+     0.0,
+     -0.0359
+    ],
+    "local_rot_xyzw": [
+     -0.0121157,
+     -0.0180314,
+     0.7221977,
+     0.6913455
+    ],
+    "local_scale": [
+     -21.7548008,
+     21.7547874,
+     21.7548008
+    ],
+    "layer": 17,
+    "type": "HandRight",
+    "data": {}
+   },
+   "LeftHand": {
+    "local_pos": [
+     0.0612,
+     0.0,
+     -0.0399
+    ],
+    "local_rot_xyzw": [
+     -0.0180315,
+     0.0121157,
+     -0.6913434,
+     0.7221997
+    ],
+    "local_scale": [
+     -21.7548008,
+     21.7547874,
+     21.7548008
+    ],
+    "layer": 17,
+    "type": "HandLeft",
+    "data": {}
+   },
+   "ForcePoint": {
+    "local_pos": [
+     0.0092508,
+     -0.013,
+     0.002
+    ],
+    "local_rot_xyzw": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "local_scale": [
+     0.833555,
+     0.833555,
+     0.833555
+    ],
+    "layer": 17,
+    "type": "ForcePoint",
+    "data": {}
+   },
+   "SoundHandler": {
+    "local_pos": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "local_rot_xyzw": [
+     -0.0,
+     -0.7071071,
+     -0.0,
+     0.7071065
+    ],
+    "local_scale": [
+     1.2000004,
+     1.1999999,
+     1.2000004
+    ],
+    "layer": 0,
+    "type": "LoopHandler",
+    "data": {}
+   }
+  },
+  "rigidbody": {
+   "pid": 55402,
+   "m_Mass": 15.0,
+   "m_Drag": 4.0,
+   "m_AngularDrag": 4.0,
+   "m_UseGravity": true,
+   "m_IsKinematic": false,
+   "m_Interpolate": 0,
+   "m_Constraints": 0,
+   "m_CollisionDetection": 0
+  },
+  "layer": 17,
+  "materials": {
+   "7530": {
+    "m_Name": "Slippery",
+    "dynamicFriction": 0.0,
+    "staticFriction": 0.0,
+    "bounciness": 0.0,
+    "frictionCombine": 1,
+    "bounceCombine": 0
+   }
+  }
+ },
+ "raw_wings": {
+  "Wings": {
+   "pid": 64781,
+   "data": {
+    "mask": {
+     "m_Bits": 512
+    },
+    "flightCurve": {
+     "m_Curve": [
+      {
+       "time": 1.8181611,
+       "value": 1.0,
+       "inSlope": -0.7122403,
+       "outSlope": -0.7122403,
+       "weightedMode": 0,
+       "inWeight": 0.3333333,
+       "outWeight": 0.0731262
+      },
+      {
+       "time": 5.6109595,
+       "value": 0.0,
+       "inSlope": 0.0,
+       "outSlope": 0.0,
+       "weightedMode": 0,
+       "inWeight": 0.3333333,
+       "outWeight": 0.3333333
+      }
+     ],
+     "m_PreInfinity": 2,
+     "m_PostInfinity": 2,
+     "m_RotationOrder": 4
+    },
+    "deadPowerDecay": 2.0,
+    "heightVariance": 1.0,
+    "variationSpeed": 1.0,
+    "flightForce": 55.0,
+    "legForceMultiplier": 0.0,
+    "headM": 0.5,
+    "animator1": "ptr(0,0)",
+    "animator2": "ptr(0,0)",
+    "useWings": 1,
+    "useWingsInPlacement": 1,
+    "rotationTorque": 0.0,
+    "setUnitMainRigKinematic": 0
+   }
+  },
+  "Cost": {
+   "pid": 64135,
+   "data": {
+    "m_cost": 300
+   }
+  },
+  "GoToBodyPart": {
+   "pid": 64796,
+   "data": {
+    "targetPart": 1,
+    "playOnStart": 1,
+    "setRotation": 0,
+    "useCenterOfMass": 0,
+    "customUnitOffset": {
+     "x": 0.0,
+     "y": 0.0,
+     "z": 0.0
+    },
+    "customUnitRotation": {
+     "x": 0.0,
+     "y": 0.0,
+     "z": 0.0
+    },
+    "keepLocalTransformOffset": 0
+   }
+  },
+  "SpecialAbility": {
+   "pid": 64615,
+   "data": {
+    "tags": [
+     {
+      "tagType": 0,
+      "value": "TAG_UNSORTED"
+     }
+    ],
+    "m_entity": {
+     "m_name": "MOVE_MISC_WINGS_LEG_SUPERP",
+     "m_spriteIcon": "ptr(0,0)",
+     "m_spriteIconPath": "",
+     "m_guid": {
+      "m_modID": -1,
+      "m_ID": 627043504
+     },
+     "m_unlockKey": ""
+    },
+    "m_showInEditor": 0,
+    "m_unitBasesRestriction": 7,
+    "m_gearType": 11,
+    "m_forceBoneAttach": 0,
+    "SubmeshArea": []
+   }
+  }
+ },
+ "laws": {
+  "engine": {
+   "gravity": [
+    0.0,
+    -20.0,
+    0.0
+   ],
+   "fixed_dt": 0.016666668,
+   "max_dt": 0.016666668,
+   "solver_position_iterations": 6,
+   "solver_velocity_iterations": 1,
+   "solver": "PGS (PhysX 4.1, Unity 2019.4.33f1)",
+   "friction_type": "patch (m_FrictionType 0)",
+   "contacts_generation": "PCM (m_ContactsGeneration 1)",
+   "contact_offset": 0.01,
+   "bounce_threshold": 2.0,
+   "sleep_threshold": 0.005,
+   "enhanced_determinism": false,
+   "max_angular_velocity_body": 500.0,
+   "max_angular_velocity_fist": 250.0,
+   "force_coefficients_60hz": {
+    "LargeForceCoefficient": 1.0,
+    "SmallForceCoefficient": 1.0,
+    "TorqueCoefficient": 1.0
+   },
+   "velocity_update_order": [
+    "v += a_ext*dt (+ impulses/m)",
+    "v += g*dt",
+    "v *= max(0, 1 - drag*dt); w *= max(0, 1 - angDrag*dt)",
+    "clamp |w| to maxAngularVelocity",
+    "constraint solve (joints, contacts)",
+    "integrate pose"
+   ],
+   "force_mode_acceleration": "AddForce(a, Acceleration): dv = a*dt, mass ignored. AddTorque(t, Acceleration): dw = t*dt, inertia ignored. AddForceAtPosition(a, p, Acceleration): dv = a*dt AND dw = ((p - worldCoM) x a)*dt (inertia ignored)",
+   "update_rate_forces": "forces added in Update apply at the next physics step; Update laws scale by 60*Time.deltaTime so their per-step value is constant"
+  },
+  "spawn": {
+   "size": "s = Lerp(1.1, 1.2, BellCurve(U01)) * sizeMultiplier(1.0); 1/10000 chance of x0.1 (70%) or x2 (30%)",
+   "size_median": 1.15,
+   "mass_multiplier": "M = massMultiplier(5) * s^2",
+   "M_at_1_15": 6.6125,
+   "body_drag_multiplier": 3.0,
+   "fist_drag": 4.0,
+   "fist_angular_drag": 4.0,
+   "joint_drive_multiplier": "M (spring and damper, X and YZ both = prefab X drive * M)",
+   "per_rig_random_scale": "localScale *= NormalRandom.GetSuperRandom(0.5,1.5) ~ 0.99..1.01 (94.5% of draws); use 1.0",
+   "curve_animation_multiplier_final": 1.0,
+   "animation_handler_multiplier_after_wings": 0.5,
+   "heightVariance": "U01 * 1.0 (Random.value, inclusive)",
+   "wings_time_offset": "U[0,1000)",
+   "turnSpeed": 500.0,
+   "turnSpeedMultiplier": "U(0.9, 1.1)",
+   "health": "100000 * s^2",
+   "balance": {
+    "forceMultiplier": 0.001,
+    "allowedFootDistance": 7.2,
+    "allowedLegAngle": 780.0,
+    "allowedTorsoAngle": 720.0,
+    "enabled_false_but_may_still_run": true
+   },
+   "canFall": false,
+   "takeFallDamage": false
+  },
+  "standing_handler": {
+   "standingForce": 100.0,
+   "baseOffset": 0.03,
+   "rigsToLift": {
+    "Head": 0.3,
+    "Torso": 1.0
+   },
+   "selfOffset": 0.0,
+   "formula": "a_up = ((min(fgn.y*downHillHelp,0)*0.2 + max(fgn.y*UpHillHelp,0))*0.1 + curve[state]((distanceToGround + selfOffset + |upHill|*0.05*staticAngleLowering + baseOffset + bob[state](sinceSwitchedStep/currentLowSwitchCap)) / s)) * muscleControl * 100; Torso += a_up*1.0 up, Head += a_up*0.3 up; only while isGrounded",
+   "data_asset_pid": 63288
+  },
+  "wings": {
+   "flightForce": 55.0,
+   "headM": 0.5,
+   "legForceMultiplier": 0.0,
+   "rotationTorque": 0.0,
+   "variationSpeed": 1.0,
+   "ray_length": 5.6109595,
+   "ray_mask_layers": [
+    9
+   ],
+   "ray_origin": "Wings transform = Torso pivot (GoToBodyPart targetPart Torso)",
+   "flightCurve_keys": [
+    [
+     1.8181611,
+     1.0,
+     -0.7122403,
+     -0.7122403
+    ],
+    [
+     5.6109595,
+     0.0,
+     0.0,
+     0.0
+    ]
+   ],
+   "formula": "if lastRay.distance > 0: x = distance + cos((Time.time + time)*1)*hv; a = 55*flightCurve(x); Head += 0.5a up; Torso += a up; TouchGround(hit); then schedule next ray (1-step latency)"
+  },
+  "lastpos_anchor": {
+   "gain_per_frame": "3000*Time.deltaTime (=50 per 60 Hz step)",
+   "reset_dist_sq": 4.0,
+   "active": "BattleState and inputDirection == 0",
+   "rig": "Torso (mainRig)",
+   "mode": "Acceleration"
+  },
+  "rotation_handler": {
+   "rotationForce": 25.0,
+   "rotationMultiplier": 1.0,
+   "clamp_deg": 15.0,
+   "formula": "for Hip and Torso separately: alpha = -25*muscle*torsoAngleMult*clamp(angle_deg(look, fwd),0,15) * normalize(cross(look, fwd)) (rad/s^2, Acceleration); only while grounded",
+   "torsoAngleCurve_keys": [
+    [
+     40.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     90.0,
+     0.5,
+     -0.0015338,
+     -0.0015338
+    ]
+   ]
+  },
+  "holding_pid": {
+   "proportionalForce": 200.0,
+   "proportionalTorque": 5.0,
+   "relativePosition_right": [
+    0.3,
+    0.4,
+    0.4
+   ],
+   "relativePosition_left": [
+    -0.3,
+    0.4,
+    0.4
+   ],
+   "forwardRotation": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "upRotation_right": [
+    0.5,
+    -1.0,
+    0.1
+   ],
+   "upRotation_left": [
+    -0.5,
+    -1.0,
+    0.1
+   ],
+   "force": "a = 200*(torso.TransformPoint(rel) - fist.position) (TransformPoint includes s)",
+   "torque": "alpha = -5*holdingTorqueMultiplier*angle_deg(t, axis)*normalize(cross(t, axis)) for axis=fist.forward,t=charFwd.TransformDirection(fwdRot) and axis=fist.up,t=charFwd.TransformDirection(upRot)",
+   "disableTorqueDuringSwing": true,
+   "disableForceDuringSwing": false,
+   "torque_ramp_after_swing_s": 0.7142857142857143,
+   "hand_joint": {
+    "linear": "locked",
+    "angular_limits_deg": [
+     -45,
+     45,
+     45,
+     45
+    ],
+    "drive_spring": 500.0,
+    "drive_damper": 50.0,
+    "mass_scaled": false,
+    "projection": "PositionAndRotation",
+    "preprocessing": false,
+    "anchor": "hand-rig pivot (Elbow_* pivot) placed on the fist grip point"
+   },
+   "grip_points_fist_frame": {
+    "RightHand": [
+     -0.0501,
+     0.0,
+     -0.0359
+    ],
+    "LeftHand": [
+     0.0612,
+     0.0,
+     -0.0399
+    ]
+   }
+  },
+  "dodge_move": {
+   "duration_s": 0.25,
+   "steps": 15,
+   "forceCurve": "constant 1 on [0,0.25]",
+   "moves": [
+    {
+     "rigs": "Torso",
+     "force": 500.0,
+     "dir_from": "Torso pivot"
+    },
+    {
+     "rigs": "AllRigs (11) + both fists",
+     "force": 400.0,
+     "dir_from": "Head pivot (AllRigs[0])"
+    },
+    {
+     "rigs": "Knee_Left",
+     "force": -250.0,
+     "dir_from": "Knee_Left pivot"
+    },
+    {
+     "rigs": "Knee_Right",
+     "force": -250.0,
+     "dir_from": "Knee_Right pivot"
+    },
+    {
+     "rigs": "Hip",
+     "force": -300.0,
+     "dir_from": "Hip pivot"
+    }
+   ],
+   "direction": "normalize(enemyTorso.position - rigs[0].position), 3D, recomputed every step (ignoreY and predictionAmount unused)",
+   "mode": "Acceleration at CoM (AddForce)",
+   "stacking": "every swing adds 5 new sequences; no cancel; mean 1.9 active",
+   "first_force": "in the attack frame (synchronous to the first yield), then once after every physics step (WaitForFixedUpdate)"
+  },
+  "melee_swing": {
+   "curveForce": 10000.0,
+   "forceCurve_end": 0.3777589,
+   "attackSpeedM": 1.0,
+   "attackTime": "U(0.8,1.2)",
+   "forceAmount": "U(0.8,1.2)",
+   "per_frame": "a = 10000*forceAmount*(2+1)*0.33*Time.deltaTime*swingDirection, AddForceAtPosition at fist ForcePoint (0.0092508,-0.013,0.002) fist-local, Acceleration",
+   "swingDirection": "normalize(targetTorsoPosAtAttack + characterForward*0.5 - ForcePoint.position), every frame",
+   "length_s": "0.3777589/(0.99*attackTime) = 0.318..0.477",
+   "damage_window": "from first frame to end of swing",
+   "same_fist_new_swing": "StopAllCoroutines (cuts the old swing)"
+  },
+  "weapon_force_animation": {
+   "rigAnimationForce": 100.0,
+   "per_frame": "a = 100*curve(1)*100*Time.deltaTime toward targetRig.position from fist (3D, every frame)",
+   "duration_s": 0.25,
+   "start": "one frame after the attack",
+   "gate": "sinceGrounded < 0.3 and ragdollControl > 0.7"
+  },
+  "collision_weapon": {
+   "damage": 30000.0,
+   "impactMultiplier": 25.0,
+   "onImpactForce": 15000000.0,
+   "massCap": 1500000.0,
+   "teamDamage": 0.1,
+   "k": "clamp(|impulse|/(m_fist+10)*0.3*25, 0, 2); k<1 ignored; vs non-rigidbody: no +10",
+   "damage_formula": "30000*k",
+   "knockback_dv_per_rig": "10*sqrt(50k) m/s along swingDirection on target mainRig and touched rig (Impulse with min-weight scaling)",
+   "slow": "if touched.mass < fist.mass: touched.v *= 0.6 and mainRig.v *= 0.6 before the impulse"
+  },
+  "attack_gates": {
+   "attack_gate_s": 0.1,
+   "attack_counter_reset": "U(-0.04,0.04)",
+   "fist_cooldown_s": 0.2,
+   "fist_pick": "50/50; other only if strictly ready",
+   "sight_timer": "+dt visible / -dt not, clamp [0,1], need > 0.5",
+   "max_range": 100000.0,
+   "max_angle_deg": 360.0,
+   "cadence_swings_per_s": [
+    7.4,
+    7.8
+   ]
+  },
+  "targeting": {
+   "score": "-|target.torso - (own.torso + own.torso.velocity*0.3)| / priority - claimedThisFrame*100000*0.05",
+   "every_frame": true,
+   "keeps_old_target_when_none": true,
+   "sight_ray": "from right fist transform to target torso, mask 0x72400200 (layers 9,22,25,28,29,30)",
+   "look_direction": "normalize(target.groundPosition - own.torso.position) (3D, pitched down to the feet)",
+   "turn_rate_deg_per_frame": "500*(Perlin(t+100k, t+100k)^2*2/6)*U(0.9,1.1)*dt*100"
+  },
+  "movement_handler": {
+   "moves": {
+    "Idle": 0.0,
+    "Walk": 9.0,
+    "Run": 13.0,
+    "Strafe": 4.0
+   },
+   "multiplier": 2.0,
+   "only_when": "target not visible (inputDirection = (0,0,1)) -> Walk state",
+   "rigs": "11 body rigs (not fists)",
+   "terminal_walk_m_s": 1.157
+  },
+  "gravity_handler": {
+   "gravity": 20.0,
+   "formula": "when !isGrounded: every body rig += 20*sinceGrounded m/s^2 down"
+  },
+  "curve_animation": "see raw_data_assets C_Arms/C_Elbow/C_Knees/C_Leg/C_Torso and the spec section 6.6; a = 60*multiplier(1.0)*Time.deltaTime*v*muscleControl, torque mode uses -a",
+  "step_handler": {
+   "data_pid": 63292,
+   "stepTimeRandom": "NormalRandom.GetRandom(0.5,2)"
+  },
+  "foot_support": {
+   "extraSupportTime": 0.1,
+   "extraNoSupportTime": 0.0,
+   "idle_strafe": "both feet GroundChecker on, Foot material"
+  },
+  "ground_checker": {
+   "max_angle_deg": 80.0,
+   "rigidbody_light_angle_deg": 40.0,
+   "light_mass_kg": 100.0
+  },
+  "state_machine": {
+   "states": {
+    "Idle": 0,
+    "Walk": 1,
+    "Run": 2,
+    "Strafe": 3
+   },
+   "rule": "dontMoveFor>0 -> Idle; input!=0: input.z<=0 -> Strafe, shift -> Run, else Walk; input==0: |torso.angularVelocity.y|>1 rad/s -> Strafe, else Idle (SetAnimationByInput, every Update)",
+   "battle": "visible target -> input 0 -> Idle/Strafe only; AI never sets shift"
+  },
+  "curve_animation_components": {
+   "Torso": [
+    "C_Torso",
+    1,
+    0,
+    0.0
+   ],
+   "Arm_Left": [
+    "C_Arms",
+    0,
+    0,
+    0.0
+   ],
+   "Arm_Right": [
+    "C_Arms",
+    1,
+    0,
+    0.0
+   ],
+   "Elbow_Left": [
+    "C_Elbow",
+    0,
+    1,
+    0.0
+   ],
+   "Elbow_Right": [
+    "C_Elbow",
+    1,
+    0,
+    0.0
+   ],
+   "Leg_Left": [
+    "C_Leg",
+    0,
+    0,
+    1.0
+   ],
+   "Leg_Right": [
+    "C_Leg",
+    1,
+    0,
+    1.0
+   ],
+   "Knee_Left": [
+    "C_Knees",
+    0,
+    0,
+    0.0
+   ],
+   "Knee_Right": [
+    "C_Knees",
+    1,
+    0,
+    0.0
+   ],
+   "_columns": [
+    "data",
+    "isRight",
+    "invertLocalAxis",
+    "uppHillHelp"
+   ],
+   "_forceType": {
+    "0": "Self",
+    "1": "World",
+    "2": "Hip",
+    "3": "Torso",
+    "4": "IputDirection (groundedMovementDirection)"
+   },
+   "_force_points": {
+    "Knee": [
+     0.0,
+     -0.475,
+     0.0
+    ],
+    "Elbow": [
+     0.0,
+     -0.023,
+     -0.021
+    ]
+   },
+   "_law": "v = (data.isRight != isRight ? backward : forward) * curve(clamp(sinceSwitchedStep/clamp(cap,0.001,1),0,1)); space transform (Hip/Torso: y negated for !isRight); uppHill factor; A = 60*multiplier(1.0)*dt*v*muscle; torque: AddTorque(-A); force: AddForceAtPosition(A, ForcePoint) or AddForce(A)"
+  }
+ },
+ "estimates": {
+  "E1_joint_sign": "Unity ConfigurableJoint angular X angle = -(rotation of child about joint X) (inferred from limits; anatomically consistent)",
+  "E2_degenerate_secondary_axis": "axis == secondaryAxis == (0,1,0) on the shoulders -> joint Y = (-1,0,0) local (Unity OrthoNormalVectorFast fallback)",
+  "E3_zero_limit_on_limited_axis": "treated as locked",
+  "E4_inertia_with_com_override": "collider-derived inertia, either about the collider CoM (GEO values) or parallel-axis shifted to the override CoM; unverified",
+  "E5_drive_implicit": "PhysX 4.1 soft-constraint (implicit spring) for joint drives",
+  "E6_static_friction": "PhysX raises static friction to dynamic when static < dynamic",
+  "E7_perlin": "Unity Mathf.PerlinNoise implementation not available; output ~[0,1]",
+  "E8_batched_order": "registration (Start) order of batched behaviours: RigidbodyHolder, then Rigidbodies components in component order (StepHandler, DataHandler, StandingHandler, GravityHandler, Balance, MovementHandler, RotationHandler, SetAnimationByInput, HoldingHandler, DragHandler, WeaponHandler...), then rig components",
+  "E9_wings_ray_scene": "the Wings RaycastCommand sees the scene as of scheduling (pre-step): result used one step later",
+  "E10_add_force_at_position": "AddForceAtPosition(a, p, Acceleration) also adds (p - worldCoM) x a as an angular acceleration (inertia ignored)",
+  "E11_fist_mass_properties": "fist CoM/inertia from the 4 boxes with uniform density per shape",
+  "E12_sim_numbers": "hover heights, sink speeds, dash distances and cadence figures come from reduced/lumped sims"
+ },
+ "derived_inertia_alternatives_base_kg_s1": {
+  "Leg_about_collider_com": [
+   0.18017,
+   0.03391,
+   0.18017
+  ],
+  "Leg_shifted_to_override_com": [
+   0.3241,
+   0.0339,
+   0.3241
+  ],
+  "Knee_about_collider_com": [
+   0.13332,
+   0.00975,
+   0.13119
+  ],
+  "Knee_shifted_to_override_com": [
+   0.2409,
+   0.01,
+   0.2385
+  ],
+  "Knee_shifted_Iyz": -0.0052,
+  "fist_com_fist_frame": [
+   0.001,
+   0.00203,
+   0.07817
+  ],
+  "fist_inertia_base_15kg": [
+   [
+    0.2015,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0969,
+    0.00106
+   ],
+   [
+    0.0,
+    0.00106,
+    0.15236
+   ]
+  ],
+  "fist_forcepoint_minus_com": [
+   0.0083,
+   -0.015,
+   -0.0762
+  ]
+ },
+ "derived_at_s_1_15": {
+  "M": 6.6125,
+  "body_mass_kg": 780.275,
+  "fist_mass_kg": 99.1875,
+  "drives_in_game": {
+   "Head": [
+    99.1875,
+    13.225
+   ],
+   "Torso": [
+    661.25,
+    99.1875
+   ],
+   "Knee": [
+    26.45,
+    6.6125
+   ]
+  },
+  "standing_full_below_head_pivot_m": 1.9198269549999998,
+  "standing_zero_above_head_pivot_m": 1.93792646,
+  "fist_hold_offset_from_torso_pivot_m": [
+   0.345,
+   0.45999999999999996,
+   0.45999999999999996
+  ],
+  "rest_pivots_m": {
+   "Hip": 1.2370250999999999,
+   "Torso": 1.5565341999999998,
+   "Head": 1.9554485
+  },
+  "hover_sim_s_1_15": {
+   "hip_pivot_m": [
+    1.2104,
+    1.2122
+   ],
+   "head_pivot_m": [
+    1.9288,
+    1.9306
+   ]
+  },
+  "dash_single_swing_13_bodies": {
+   "v_at_0_25_m_s": 32.15,
+   "distance_total_m": 8.59,
+   "per_step_keep": 0.8331,
+   "gain_per_step_m_s": 5.737
+  },
+  "dash_continuous_fight_m_s": {
+   "mean": 65.4,
+   "p5": 50.2,
+   "p50": 65.8,
+   "p95": 79.0,
+   "max": 88.3
+  }
+ },
+ "fo4_mapping": {
+  "UPM_default": 64.18,
+  "UPM_metric": 69.99124,
+  "position": "fo4 = UPM * (x, z, y)_unity  (P = [[1,0,0],[0,0,1],[0,1,0]], det -1)",
+  "direction": "fo4 = (x, z, y)_unity",
+  "axial_vectors": "angular velocity / torque / rotation axis built with Cross: fo4 = -(x, z, y)_unity",
+  "quaternion": "(qx, qy, qz, qw)_unity -> (-qx, -qz, -qy, qw)_fo4",
+  "recommendation": "simulate in Unity frame and SI units exactly as TABS, convert only at the bone-pose boundary"
+ }
+}

@@ -1,0 +1,13 @@
+{
+  "input_sha256": "05eebbe76763d558198aa4d6262855e1d2205251733b2426f9eb7d7b5c4937fc",
+  "output_sha256": "b9dc1c9e4e8c767366d51ae4393171c9d516b4ee9df6627550e20af82be34f4a",
+  "fields": 19,
+  "all_non_whitelisted_bytes_sha256": "401cd7c0a46286d03df8ee28b1251659b19fd6236d4d497b4991b7f42e4d5209",
+  "executable_sections": [
+    {
+      "section": ".text",
+      "sha256": "158f408058f792afea057208089a9a852c4474ef6a30832e8e61c9a31abef032"
+    }
+  ],
+  "scope": "Only exact source_location diagnostic filename literals; all addresses, instructions and other bytes unchanged"
+}

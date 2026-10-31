@@ -1,0 +1,15 @@
+artifacts/
+release/
+**/build/
+**/.xmake/
+**/__pycache__/
+*.pyc
+*.pdb
+*.obj
+*.lib
+*.log
+*.ess
+*.f4se
+*.env
+.env*
+.vs/
